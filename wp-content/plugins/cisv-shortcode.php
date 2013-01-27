@@ -255,12 +255,7 @@ function cisv_memberform($options) {
 <input type="submit" value="Send inn" class="button" />
 </fieldset>
 </form>
-<? 
+<?php 
 }
 
 add_shortcode('theform', 'cisv_memberform');
-
-
-
-
-?>
