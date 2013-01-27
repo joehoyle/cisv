@@ -1,0 +1,53 @@
+/* GIGPRESS MODIFISERT */
+
+li.vevent {
+	margin-bottom: 10px;
+	}
+p.gigpress-subscribe {
+	margin-bottom: 10px;
+	}
+table.gigpress-table {
+	border-top: none;
+	}
+td.gigpress-date {
+	width: 16%;
+	}
+td.gigpress-artist {
+	width: 30%;
+	}
+td.gigpress-city {
+	width: 25%;
+	}
+td.gigpress-venue {
+	width: 29%;
+	}
+.gigpress-table th {
+	padding: 6px 0 6px 0;
+	}
+.gigpress-table td {
+	padding: 6px 0 6px 0;
+	}
+.gigpress-table th {
+	border-bottom: 1px solid #AAA;
+	}
+tr.gigpress-info td {
+	font-size: 0.9em;
+	color: #666;
+	border-bottom: 1px solid #AAA;
+	}
+tr.gigpress-info td {
+	padding: 0 0 6px 0;
+	}
+.gigpress-row td {
+	border-bottom: none;
+	}
+tr.gigpress-tour td.gigpress-date {
+	padding: 6px 0 6px 5px;
+	}
+.gigpress-tour .gigpress-links-cell {
+	padding: 0 0 0 5px;
+	}
+th.gigpress-heading {
+	padding-left: 5px;
+	}
+

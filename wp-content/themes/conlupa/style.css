@@ -1,0 +1,319 @@
+/*
+Theme Name:     Sight Child
+Theme URI:      
+Description:    Child theme for the WPShower's Sight theme 
+Author:         Camila Barrera
+Author URI:     
+Template:       sight
+Version:        0.1.0
+*/
+
+
+@import url("../sight/style.css");
+
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font: 75%/1.5 Verdana, Tahoma, Arial, Helvetica, Sans-Serif;   
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Interstate;
+}
+.wrapper {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0 auto;
+    width: 959px;
+}
+
+/*HEADER*/
+.header {
+	padding: 0;
+	margin-bottom: 10px;
+}
+.logo {
+    padding: 18px 0 12px;
+    width: 400px;
+}
+.search {
+	display: none;
+}
+.site-description{
+	float: right;
+	padding: 35px 0 12px 30px;
+	width: 190px;
+}
+
+/*MAIN MENU*/
+.nav {
+    border-top: medium none;
+}
+.dd {
+    background-color: #336699;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 0 20px 0	;
+    padding: 0 0 0 5px;
+    height: 36px;
+}
+.dd li {
+    border-left: 0 solid #D9D9D9;
+    padding: 0 0 0 5px;
+    text-transform: none;
+}
+.dd li a {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 8px;
+}
+.dd li a:hover {
+    background-color: #CC0066;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.dd li ul {
+    background: #FFFFFF;
+    border-bottom: 0;
+    padding: 5px 0;
+    box-shadow: 0 5px 10px #888888;
+    min-width: 70px;
+}
+.dd li ul li a {
+	color: #336699;
+    padding: 0 !important;
+}
+.dd li ul li a:hover {
+    color: #CC0066;
+}
+.dd li.dd_hover {
+    background: none repeat scroll 0 0;
+}
+.dd li.parent a {
+	background: none;
+    margin: 0;
+    padding: 8px;
+}
+.dd li.parent a.dd_hover {
+    background: #CC0066;
+    border-bottom: 0px solid #FFFFFF;
+    margin: 0;
+    padding: 8px;
+}
+
+/*SLIDESHOW*/
+
+#slideshow, .slideshow {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+}
+.slide {
+	background: #fea334;
+    background: -moz-linear-gradient(270deg, #FEA334, #BB5E00) repeat scroll 0 0 transparent;
+ 	background: -webkit-linear-gradient(270deg, #fea334, #bb5e00) repeat scroll 0 0 transparent;
+ 	background: -o-linear-gradient(270deg, #fea334, #bb5e00) repeat scroll 0 0 transparent;
+ 	background: -ms-linear-gradient(270deg, #fea334, #bb5e00) repeat scroll 0 0 transparent;
+ 	background: linear-gradient(270deg, #fea334, #bb5e00) repeat scroll 0 0 transparent;
+    height: 290px;
+    width: 960px;
+    border-radius: 5px;
+}
+.slide img {
+    display: block;
+    float: left;
+    height: 290px;
+    left: -30px;
+    position: relative;
+    top: -20px;
+    width: 620px;
+    border-radius: 5px 0 0 5px;
+}
+.slide .post-category {
+    color: #fff;
+}
+.slide .post a {
+    color: #fff;
+}
+.slide .post-content {
+    color: #FFF;
+}
+.slide .post .post-category a:hover {
+    text-decoration: none;
+    color: #FFECD7;
+}
+.slide .post h2,
+.slide .post h2 a {
+    color: #fff;
+}
+.slide .post h2 a:hover {
+    text-decoration: none;
+    color: #FFECD7;
+}
+.slide .post .post-meta {
+    color: #fff;
+	display: none;
+}
+.slide .post .post-meta span,
+.slide .post .post-meta a {
+    color: #fff;
+    font-family: Verdana,Arial,sans-serif;
+}
+.slide .post .post-meta a:hover {
+    text-decoration: none;
+    color: #FFECD7;
+}
+#larr:hover, #rarr:hover {
+    opacity: 0.6;
+}
+
+/*SIDEBAR*/
+
+.sidebar {
+    float: right;
+    padding: 0;
+    width: 290px;
+}
+
+/*CONTENT*/
+.content-title {
+    padding: 0 0 15px 0px;
+    text-transform: uppercase;
+    margin-right: 19px;
+    font-size: 100%;
+    font-family: Interstate;
+}
+.list .post {
+    padding: 20px 0 0 0;
+    margin-right: 19px;
+}
+.grid {
+    padding: 0;
+}
+.grid .post {
+	margin: 19px 19px 0 0;
+	height: 158px;
+	width: 158px;
+}
+.f, .t, .su, .di {
+	display: none;
+}
+#social .social-input-row .social-label {
+    left: 0;
+    top: 16px;
+}
+.widget h3, .widget-small h3 {
+	font-size: 100%;
+}
+
+/*PAGINATION*/
+#pagination {
+	color: #336699;
+    padding: 20px 0 0 0;
+    margin-right: 19px;
+}
+#pagination .nextpostslink:hover {
+    background-color: #CC0066;
+    color: #FFFFFF;
+}
+
+/*ENTRIES*/
+
+.entry .post-meta {
+    padding: 15px 0 15px 0;
+    margin-right: 19px;
+}
+.entry .post-content {
+    padding: 15px 0 0 0;
+    margin-right: 19px;
+}
+.post-content blockquote p {
+    color: #000000;
+}
+.post-content .size-thumbnail {
+    display: inline !important;
+    margin: 0 5px 0 0 !important;
+    width: 150px;
+}
+.post-navigation {
+    padding: 15px 0 0 0;
+    width: 640px;
+}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+    font-family: Interstate;
+}
+.post-content h6 {
+	left: 0;
+}
+.post-content .size-thumbnail {
+    display: inline !important;
+    margin: 0 5px 0 0 !important;
+    width: 150px !important;
+}
+.post-content .wp-caption {
+        padding: 0px;
+        text-align: left;
+        width: 100% !important;
+        height: auto;
+    }
+.comments h3 {
+    padding: 15px 0 10px 0;
+    margin-right: 19px;
+}
+
+#commentform {
+    padding: 30px 0 0;
+    margin-right: 19px;   
+}
+ #social .social-input-row .social-label {
+    left: 0;
+    top: 16px;
+}
+#submit {
+	background: none repeat scroll 0 0 #336699;
+	border-radius: 5px;
+}
+#submit:hover {
+	background: none repeat scroll 0 0 #CC0066;
+}
+.entry .post-footer {
+    padding-left: 0;
+    margin-right: 19px;
+}
+
+/*FOOTER*/
+.footer {
+	padding: 20px 0 0 0;
+}
+
+
+/*COLOR OF LINKS*/
+
+.sidebar a, 
+.content-title a,
+.entry .post-content a,
+.entry .post-meta a,
+.list .post .post-category a,
+.footer a,
+.list .post .post-meta a,
+.comments a,
+.comments-author a,
+#respond p a {
+	color: #336699;
+	text-decoration: none;
+}
+.sidebar a:hover,
+.content-title a:hover,
+.entry .post-content a:hover,
+.entry .post-meta a:hover,
+.list .post .post-category a:hover,
+.list .post h2 a:hover,
+.footer a:hover,
+.list .post .post-meta a:hover,
+.comments a:hover,
+.comments-author a:hover,
+#respond p a:hover  {
+	color: #CC0066;
+	text-decoration: none;
+}
+
+
+
+

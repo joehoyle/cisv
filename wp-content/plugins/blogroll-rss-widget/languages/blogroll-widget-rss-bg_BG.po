@@ -1,0 +1,169 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogroll RSS Widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-07 13:59+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Dimitar Kolevski <dimitar.kolevski@mail.bg>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: blogroll-widget-rss.php:28
+msgid "The recent posts of your blogroll links"
+msgstr "Последните мнения на вашия блогрол връзки"
+
+#: blogroll-widget-rss.php:182
+msgid "Make sure, that you have entered the right RSS Addresses to your links in the Links Subpanel. Otherwise this plugin will not work correctly. No item is shown when a wrong or no RSS Address is entered!"
+msgstr "Уверете се, че сте въвели правилната Адреси RSS за връзките си в Връзки Subpanel. В противен случай този плъгин няма да работи коректно. Не елемент е показан, когато грешен или не RSS адрес е влязъл!"
+
+#: blogroll-widget-rss.php:185
+msgid "Widget Settings:"
+msgstr "Widget Настройки:"
+
+#: blogroll-widget-rss.php:188
+msgid "Title:"
+msgstr "Заглавие:"
+
+#: blogroll-widget-rss.php:193
+msgid "Display items:"
+msgstr "Показване на елементите:"
+
+#: blogroll-widget-rss.php:195
+msgid " (-1 will display all items)"
+msgstr "(-1 Ще покаже на всички елементи)"
+
+#: blogroll-widget-rss.php:199
+msgid "Display items from link category:"
+msgstr "Показване на елементи от връзката категория:"
+
+#: blogroll-widget-rss.php:200
+msgid "Select Link Category"
+msgstr "Изберете категория Link"
+
+#: blogroll-widget-rss.php:202
+msgid "All Links"
+msgstr "Всички връзки"
+
+#: blogroll-widget-rss.php:214
+msgid "Item order:"
+msgstr "Точка за:"
+
+#: blogroll-widget-rss.php:215
+msgid "Select Item Order"
+msgstr "Изберете Ред т."
+
+#: blogroll-widget-rss.php:217
+msgid "Link Name Ascending"
+msgstr "Линк Име Възходящо"
+
+#: blogroll-widget-rss.php:218
+msgid "Link Name Descending"
+msgstr "Име на връзката Низходящ"
+
+#: blogroll-widget-rss.php:219
+msgid "Link ID Ascending"
+msgstr "Link ID Възходящ"
+
+#: blogroll-widget-rss.php:220
+msgid "Link ID Descending"
+msgstr "Link ID Низходящ"
+
+#: blogroll-widget-rss.php:221
+msgid "Random Order"
+msgstr "произволен ред"
+
+#: blogroll-widget-rss.php:223
+msgid "(\"Random Order\" is recommended for less than all items)"
+msgstr "(\ \"Произволен ред \" се препоръчва за по-малко от всички елементи)"
+
+#: blogroll-widget-rss.php:226
+msgid "Items Configuration:"
+msgstr "Елементи Конфигурация:"
+
+#: blogroll-widget-rss.php:232
+msgid "Show link images:"
+msgstr "Покажи връзка изображения:"
+
+#: blogroll-widget-rss.php:233
+msgid "Select if you want to show images"
+msgstr "Изберете, ако искате да показва изображения"
+
+#: blogroll-widget-rss.php:235
+msgid "Show no images"
+msgstr "Покажи няма образ"
+
+#: blogroll-widget-rss.php:236
+msgid "Show my own images"
+msgstr "Покажи моите собствени изображения"
+
+#: blogroll-widget-rss.php:237
+msgid "Create and show thumbnails"
+msgstr "Създаване и показват миниатюри"
+
+#: blogroll-widget-rss.php:243
+msgid "Pixel (image size)"
+msgstr "Pixel (размер на изображението)"
+
+#: blogroll-widget-rss.php:258
+msgid "Show blogroll links ?"
+msgstr "Покажи блогрол връзки?"
+
+#: blogroll-widget-rss.php:264
+#: blogroll-widget-rss.php:290
+msgid "Add rel=\"nofollow\" ?"
+msgstr "Добави rel=\"nofollow\" ?"
+
+#: blogroll-widget-rss.php:278
+msgid "Display feed post links:"
+msgstr "Покажи публикация на фуражите:"
+
+#: blogroll-widget-rss.php:280
+msgid "(between 1 and 10)"
+msgstr "(между 1 и 10)"
+
+#: blogroll-widget-rss.php:284
+msgid "Shorten feed post link text ?"
+msgstr "Скъсете хранят текст връзка пост?"
+
+#: blogroll-widget-rss.php:294
+msgid "shorten to"
+msgstr "съкрати до"
+
+#: blogroll-widget-rss.php:296
+msgid "characters"
+msgstr "символи"
+
+#: blogroll-widget-rss.php:311
+msgid "Show feed post excerpts ?"
+msgstr "Покажи хранят мнение откъси?"
+
+#: blogroll-widget-rss.php:317
+msgid "Characters for excerpts"
+msgstr "Символи за откъси"
+
+#: blogroll-widget-rss.php:318
+msgid "(between 10 and 999)"
+msgstr "(между 10 и 999)"
+
+#: blogroll-widget-rss.php:333
+msgid "Donate an item to plugin author ?"
+msgstr "Дарете елемент плъгин автор?"
+
+#: blogroll-widget-rss.php:334
+msgid "If you like this plugin I would be happy if you donate an item in your Blogroll to my Crazy Girls Tipps Blog (if it isnt in your Blogroll yet)."
+msgstr "Ако ви харесва този плъгин Ще се радвам, ако ви дарят елемент в Blogroll ми Crazy Girls Блог Tipps (ако то все още не е във вашите блогрол)."
+
+#: blogroll-widget-rss.php:416
+msgid "No RSS Addresses are entered to your links in the Links SubPanel, therefore no items can be shown!"
+msgstr "RSS Адреси, вписани в връзките си във връзките SubPanel, поради което не може да се докаже!"
+
+#~ msgid "Show website thumbnails ?"
+#~ msgstr "Thumbnails anzeigen ?"

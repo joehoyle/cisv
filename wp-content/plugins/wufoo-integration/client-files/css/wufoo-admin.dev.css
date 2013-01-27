@@ -1,0 +1,157 @@
+.wufoo-integration-processing,
+.wufoo-integration-processing .controls {
+	background:url('../images/loading.gif') no-repeat top center;
+}
+
+.wufoo-integration-popup-container {
+	margin:0 auto;
+	position:fixed;
+	top:100px;
+	width:100%;
+}
+
+* html .wufoo-integration-popup-container {
+	position:absolute;
+}
+
+	.wufoo-integration-popup-wrap {
+		margin:0 auto;
+		position:relative;
+		width:460px;
+	}
+		.wufoo-integration-popup-wrap .popup-header {
+			background:url('../images/wufoobutton-popup-body.png') no-repeat top center;
+			cursor:move;
+			height:46px;
+		}
+			.wufoo-integration-popup-wrap .popup-header .close-link {
+				cursor:pointer;
+				display:block;
+				height:14px;
+				overflow:hidden;
+				position:absolute;
+				right:17px;
+				text-align:left;
+				text-indent:-999em;
+				top:12px;
+				width:27px;
+			}
+
+		.wufoo-integration-popup-wrap .popup-body {
+			background:url('../images/wufoobutton-popup-bg.png') repeat-y top center;
+			border-bottom:1px solid #919b9c;
+			display:block;
+			margin:0 10px;
+			padding-top:10px;
+			width:440px;
+			-moz-box-shadow: 3px 3px 13px #666;
+			-webkit-box-shadow: 3px 3px 13px #666;
+			box-shadow: 3px 3px 13px #666;
+		}
+			.wufoo-integration-popup-wrap .popup-body .controls {
+				margin:10px;	
+			}
+			.wufoo-integration-popup-wrap .popup-body .controls:after {
+				clear:both;
+				content:'.';
+				display:block;
+				height:0;
+				visibility:hidden;
+			}
+				.wufoo-integration-popup-wrap .popup-body .controls button {
+					background: #fff;
+					border:1px solid #919b9c;
+					display:block;
+					float:left;
+					font-weight:bold;
+					margin-right:10px;
+					padding:.5em;
+
+					background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e5e5e5));
+					background: -moz-linear-gradient(top,  #fff,  #e5e5e5);
+					filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5');
+					-moz-border-radius:5px;
+					-webkit-border-radius:5px;
+					-khtml-border-radius:5px;
+					border-radius:5px;
+				}
+				
+				.wufoo-integration-popup-wrap .popup-body .controls button:active {
+					background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#fff));
+					background: -moz-linear-gradient(top,  #e5e5e5,  #fff);
+					filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#ffffff');
+				}
+
+			.wufoo-integration-popup-wrap .popup-body .main-section {
+				background:#fff;
+				border:1px solid #919b9c;
+				margin:0 10px 10px 10px;	
+				padding:1em;
+			}
+				
+				.wufoo-integration-insert-options li {
+					display:inline;
+					margin-right:10px;
+				}
+					.wufoo-integration-insert-options li .disabled {
+						opacity: .5;
+						-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; // first!
+						filter: alpha(opacity=50);
+					}
+				
+				#wufoo-integration-form-list {
+					width:100%;
+					margin-bottom:10px;
+				}
+
+				.wufoo-integration-popup-wrap .popup-body .main-section .example-url {
+					border-bottom:1px dotted;
+					color:#CD7F32;
+				}
+
+				.wufoo-email-incorrect {
+					color:red;
+				}
+				
+				.wufoo-email-incorrect-inactive {
+					display:none;
+				}
+
+				.wufoo-integration-popup-wrap .popup-body .main-section .wufoo-integration-input {
+					border:2px solid #919b9c;
+					color:#000;
+					font-weight:bold;
+					padding:.5em;
+					-moz-border-radius:10px;
+					-webkit-border-radius:10px;
+					-khtml-border-radius:10px;
+					border-radius:10px;
+				
+					width:250px;
+				}
+				
+				.wufoo-integration-popup-wrap .popup-body .main-section .wufoo-integration-input-highlighted {
+					border-color:red;
+				}
+
+#ed_toolbar #ed_wufoo_dialog {
+	background:url('../images/wufoo-button.png') no-repeat top center;
+	border:none;
+	display:block;
+	height:24px;
+	overflow:hidden;
+	text-align:left;
+	text-indent:-999em;
+	width:62px;
+}
+
+#content_WufooIntegration {
+	border:0;
+	margin-top:-3px;
+	padding:0;
+}
+	#content_WufooIntegration .mceIcon {
+		height:24px;
+		width:62px;
+	}
+

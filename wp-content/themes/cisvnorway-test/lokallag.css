@@ -1,0 +1,114 @@
+/* Lokallagsmenyen under hovedmeny START */
+
+#topp-wrapper #lokallagmeny {
+	background-color: #009ede;
+	margin: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px 10px;
+	}
+#topp-wrapper #lokallagmeny ul li {
+	display: inline;
+	}
+#topp-wrapper #lokallagmeny ul li a {
+	padding: 6px 10px;
+	color: white;
+	}
+#topp-wrapper #lokallagmeny ul li.startside a {
+	padding: 6px 10px;
+	color: white;
+	font-weight: bold;
+	}
+#topp-wrapper #lokallagmeny ul li a:hover {
+	background-color: #00acf1;
+	}
+
+/* Lokallagsmenyen under hovedmeny SLUTT */
+
+.nyhetssaker {
+	float: left;
+	clear: both;
+	width: 620px;
+	}
+.nyhetssak .post-forside {
+	padding: 10px 0 5px 0;
+	}
+#velkomsttekst-lokallag {
+	background: url('images/velkomst-lokallag.png') no-repeat left top #bee3f2;
+	margin: 0 0 20px 0;
+	padding: 20px 5px 20px 75px;
+	min-height: 60px;
+	border-right: 5px solid #009ede;
+	font-size: 1.4em;
+	}
+#velkomsttekst-lokallag h2 {
+	margin: 0 0 3px 0;
+	font-weight: bold;
+	}
+#velkomsttekst-lokallag p {
+	margin: 0 0 3px 0;
+	}
+#hovedfelt-hoyre {
+	float: right;
+	width: 320px;
+	}
+#kalender-wrapper {
+	border-bottom: 1px solid #429a3d;
+	float: right;
+	margin: 0 0 20px 0;
+	width: 320px;
+	}
+#kalender-wrapper h2 {
+/*	background: url('images/bakgrunn-gronn-forlopning.png') repeat-x center bottom #429a3d; */
+	color: white;
+	margin: 0 0 10px 0;
+	padding: 5px 5px 5px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+.kalenderinnlegg {
+	margin: 0 0 10px 0;
+	}
+.bli-medlem {
+	margin: 0 0 20px 0;
+	}
+.wp-caption {
+float: left;
+}
+.wp-caption .wp-caption-text {
+font-size: 0.9em;
+color: #AAAAAA;
+}
+
+/* WIDGETS */
+/* MAA RYDDES OPP I, ER TOTALT KAOS AKKURAT NAA */
+
+/* TWITTER */
+
+#twitter-wrapper a.aktt_tweet_time,
+#twitter-wrapper a.aktt_tweet_reply {
+	color: #999999;
+	}
+#twitter-wrapper .aktt_tweets .aktt_credit {
+	font-size: 0.9em;
+	color: #999999;
+	}
+#twitter-wrapper .aktt_tweets ul li {
+	margin-bottom: 0.75em;
+	font-size: 0.9em;
+	}
+#twitter-wrapper .aktt_tweets ul li.aktt_more_updates {
+	float: right;
+	margin-bottom: 0;
+	}
+#twitter-wrapper div {
+	background: url('images/ikon-stor-twitter.png') no-repeat 20px 16px #429a3d;
+	background-color: #bff2ff; 
+	float: right;
+	padding: 43px 20px 16px 20px;
+	margin: 0 0 20px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	}
+
+/* TWITTER SLUTT*/

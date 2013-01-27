@@ -1,0 +1,41 @@
+.wpyt-profile td {
+	font-family: Arial;
+	/*border: 1px solid #ccc;*/
+}
+
+.wpyt-profile {
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.wpyt-color input {
+	border: none;
+	background: none;
+}
+
+.wpyt-profile img {
+	padding-right: 10px;
+}
+
+.introText {
+	text-align: center;
+	color: red;
+	display: block;
+}
+
+.wpyt_displaytag {
+	font-weight: bold;
+}
+
+.wpyt-color {
+	padding: 5px;
+	text-align: center;
+}
+
+table.wpyt-profile {
+	border: 1px solid #ccc;
+}
+
+.wpyt-options td {
+	padding-right: 20px;
+}

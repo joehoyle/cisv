@@ -1,0 +1,12 @@
+/*
+Theme Name: CISV norway komiteer
+Theme URI: http://cisv.no/
+Description: Child Theme for CISV norway komiteer
+Author: Kristian Kalvå
+Author URI: http://cisv.no/
+Template: cisvnorway_old
+Version: 1.0
+*/
+ 
+@import url("../cisvnorway/style.css");
+@import url("../cisvnorway/lokallag.css");

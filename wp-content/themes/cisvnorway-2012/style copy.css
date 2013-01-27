@@ -1,0 +1,901 @@
+/*   
+Theme Name: CISV Norway Hovedtema
+Theme URI: http://www.cisv.no/
+Description: Tema for CISV Norway.
+Author: Espen M. Kvalheim, Oktan Alfa
+Author URI: http://www.oktan.no/
+Version: 1.0
+Tags: 
+
+Credits, resetting: http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, big, cite,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CISV-style */
+
+body {
+	background-color: #FFFFFF;
+	font: 75%/1.5 Verdana, Tahoma, Arial, Helvetica, Sans-Serif;
+	}
+a {
+	color: #0090ff;
+	text-decoration: none;
+	}
+a:hover {
+	color: #ed7f28;
+	text-decoration: none;
+	}
+#kontainer {
+	margin: 0 auto;
+	width: 960px;
+	}
+#topp-wrapper {
+	padding-top: 20px;
+	}
+#topp-wrapper h1 a {
+	background: url('images/cisv-norge-logo.png') no-repeat left center;
+	color: #555;
+	display: block;
+	float: left;
+	height: 70px;
+	margin-bottom: 20px;
+ 	overflow: hidden;
+	text-indent: -5000px;
+	text-transform: uppercase;
+	width: 254px;
+	}
+.skip-link {
+	display: none;
+	}
+#topp-wrapper #mini-topp-meny {
+	color: #0090ff;
+	float: right;
+	font-size: 0.85em;
+	}
+#topp-wrapper #mini-topp-meny a {
+	color: #000000;
+	}
+#topp-wrapper #sok-og-lokallag {
+	float: right;
+	clear: right;
+	margin-top: 10px;
+	text-align: right;
+	width: 400px;
+	}
+#topp-wrapper #sok-og-lokallag #sok {
+	float: left;
+	width: 200px;
+	}
+#topp-wrapper #sok-og-lokallag #sok input#searchbox {
+position: absolute;
+	height: 17px;
+	padding: 3px 2px 0px 3px;
+	width: 170px;
+z-index: 2;
+	border: 1px solid #CCCCCC;
+	}
+#topp-wrapper #sok-og-lokallag #sok input#searchbutton {
+position: absolute;
+padding-left: 180px;
+z-index: 1;
+	}
+	
+/* Lokallagsmenyen i toppen */
+	
+#topp-wrapper #sok-og-lokallag #lokallag {
+	float: right;
+	width: 185px;
+text-align: left;
+margin-top: 3px;
+	}
+#topp-wrapper #sok-og-lokallag #lokallag ul {
+float: left;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul li a {
+display: block;
+padding: 4px 0 4px 8px;
+width: 177px;
+color: #666666;
+	background: url('images/pil-ned-30.png') no-repeat 167px center #DDDDDD;
+
+}
+#topp-wrapper #sok-og-lokallag #lokallag a:hover  {
+
+}
+#topp-wrapper #sok-og-lokallag #lokallag li {
+position: relative;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul {
+position: absolute;
+z-index: 500;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul ul {
+top: 22px;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul ul li a {
+	background-image: none;
+border-top: 1px solid #EEEEEE;
+color: #0090ff;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul ul li a:hover {
+	background: url('images/pil-hoyre-30.png') no-repeat 169px center #EEEEEE;
+color: #ed7f28;
+}
+#topp-wrapper #sok-og-lokallag #lokallag ul ul,
+#topp-wrapper #sok-og-lokallag #lokallag ul li:hover ul ul,
+#topp-wrapper #sok-og-lokallag #lokallag ul ul li:hover ul ul
+{display: none;}
+
+#topp-wrapper #sok-og-lokallag #lokallag ul li:hover ul,
+#topp-wrapper #sok-og-lokallag #lokallag ul ul li:hover ul,
+#topp-wrapper #sok-og-lokallag #lokallag ul ul ul li:hover ul
+{display: block;
+}
+
+/* Lokallagsmenyen i toppen - slutt */
+
+#topp-wrapper #sok-og-lokallag #lokallag,
+#topp-wrapper #sok-og-lokallag #sok input#searchbox {
+	color: #666666;
+	font: 90% Verdana, Tahoma, Arial, Helvetica, Sans-Serif;
+	}
+#topp-wrapper #hovedmeny {
+	background-color: #DDDDDD;
+	clear: both;
+	text-align: center;
+	padding: 10px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 20px;
+	}
+#topp-wrapper #hovedmeny ul li {
+	display: inline;
+	padding-left: 5px;
+	}
+#topp-wrapper #hovedmeny ul li.page_item {
+	border-left: 1px solid #AAAAAA;
+	}
+#topp-wrapper #hovedmeny ul li.page_item a {
+	color: #555555;
+	font-weight: bold;
+	padding: 9px 8px;
+
+	}
+#topp-wrapper #hovedmeny ul li.page_item a:hover {
+	background: url('images/topp-meny-bakgrunn.png') no-repeat center bottom;
+	border-bottom: 5px solid red;
+	color: #000000;
+	}
+	
+/*	Hver side ha en kode tilegnet seg. Du finner IDen i Dashboard. Foelgende er i bruk: 
+	Aktiviteter: 5
+	Engasjer deg: 47
+	Fredsutdanning: 216
+	Nyheter: 49
+	Presse: 43
+	Lokalt: 311
+	CISV Norge: 290
+	CISV International: 314
+	Wiki: 83
+*/
+
+#topp-wrapper #hovedmeny ul li.page-item-5 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-47 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-45 a:hover {
+	border-bottom: 5px solid #ed7f28;
+	}
+#topp-wrapper #hovedmeny ul li.startside {
+	border-left: none;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-5.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-5.current_page_parent a,
+#topp-wrapper #hovedmeny ul li.page-item-47.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-47.current_page_parent a,
+#topp-wrapper #hovedmeny ul li.page-item-216.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-216.current_page_parent a {
+	background: url('images/topp-meny-bakgrunn.png') no-repeat center bottom;
+	border-bottom: 5px solid #ed7f28;
+	color: #000000;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-5 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-47 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-216 a:hover {
+	border-bottom: 5px solid #ed7f28;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-49 a:hover, 
+#topp-wrapper #hovedmeny ul li.page-item-43 a:hover {
+	border-bottom: 5px solid #429a3d;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-49.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-49.current_page_parent a,
+#topp-wrapper #hovedmeny ul li.page-item-43.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-43.current_page_parent a {
+	background: url('images/topp-meny-bakgrunn.png') no-repeat center bottom;
+	border-bottom: 5px solid #429a3d;
+	color: #000000;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-49 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-43 a:hover {
+	border-bottom: 5px solid #429a3d;
+	}
+#topp-wrapper #hovedmeny ul li.startside a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-311 a:hover {
+	border-bottom: 5px solid #009ede;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-311.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-311.current_page_parent a {
+	background: url('images/topp-meny-bakgrunn.png') no-repeat center bottom;
+	border-bottom: 5px solid #009ede;
+	color: #000000;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-311 a:hover {
+	border-bottom: 5px solid #009ede;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-290 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-314 a:hover {
+	border-bottom: 5px solid #ffe800;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-290.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-290.current_page_parent a,
+#topp-wrapper #hovedmeny ul li.page-item-314.current_page_item a,
+#topp-wrapper #hovedmeny ul li.page-item-314.current_page_parent a {
+	background: url('images/topp-meny-bakgrunn.png') no-repeat center bottom;
+	border-bottom: 5px solid #ffe800;
+	color: #000000;
+	}
+#topp-wrapper #hovedmeny ul li.page-item-290 a:hover,
+#topp-wrapper #hovedmeny ul li.page-item-314 a:hover {
+	border-bottom: 5px solid #ffe800;
+	}
+#hoved-wrapper {
+	clear: both;
+	padding: 10px 0 20px 0;
+	}
+.hovedfelt-venstre {
+	float: left;
+	width: 620px;
+	}
+.hovedsak {
+	height: 280px;
+	}
+.hovedsak img {
+	position: absolute;
+ 	z-index: 1;
+margin: 0;
+padding: 0;
+ 	}
+.hovedsak h2 a {
+	color: #FFFFFF;
+	font-size: 3em;
+	text-shadow: black 0em 0em 0.2em;
+	margin: 30px 0 0 20px;
+	position: absolute;
+	width: 580px;
+	z-index: 2;
+	}
+.hovedsak #smooth_sldr span {
+	margin-top: 180px;
+	background: url('images/bakgrunn-70.png') repeat center center;
+	height: 58px;
+	padding: 12px 20px 0 20px;
+	position: absolute;
+	width: 580px;
+	z-index: 2;
+	}
+.nyhetssaker {
+	float: left;
+	clear: both;
+	width: 420px;
+	}
+.nyhetssak .post-forside {
+	padding: 10px 0 5px 0;
+	}
+.nyhetssak p.dato {
+	color: #AAAAAA;
+	font-size: 0.9em;
+margin: 0;
+padding: 0;
+line-height: 1em;
+	}
+.nyhetssak .read-more {
+	font-weight: bold;
+	padding-left: 0.5em;
+	}
+.nyhetssak .post-forside h2 {
+	font-size: 2em;
+	font-weight: normal;
+margin: 0 0 6px 0;
+padding: 0;
+line-height: 1.4em;
+	}
+.nyhetssak h2 a {
+	color: #000000;
+	}
+.nyhetssak h2 a:hover,
+.rss-feed a:hover,
+#footer a:hover,
+#topp-wrapper #mini-topp-meny a:hover,
+.breadcrumb-undersider a:hover {
+	color: #ed7f28;
+	}
+.breadcrumb-undersider {
+	font-size: 0.8em;
+	color: #AAAAAA;
+	}
+.breadcrumb-undersider a {
+}
+.hovedfelt-venstre #venstremeny {
+	float: left;
+	width: 180px;
+	}
+#venstremeny {
+	margin: 10px 0 0 0;
+	}
+#venstremeny li {
+	margin-bottom: 1px;
+	}
+#venstremeny li a {
+	padding: 7px 0 7px 10px;
+	display: block;
+	background: url(images/submeny-hvit.png) no-repeat right center #DDDDDD;
+	color: #000000;
+	}
+#venstremeny li a:hover,
+#venstremeny ul li.current_page_item a,
+#venstremeny ul li.current_page_parent a {
+	color: #000000;
+	background: url(images/submeny-venstre-pil-mot-hoyre.png) no-repeat right center #CCCCCC;
+	}
+#venstremeny ul li.current_page_parent a {
+	color: #000000;
+	background: url(images/submeny-hvit.png) no-repeat right center #CCCCCC;
+	}
+#venstremeny ul li.page_item ul li.page_item {
+	display: none;
+}
+#venstremeny ul li.current_page_parent ul li.page_item {
+	display: block;
+}
+#venstremeny ul li.page_item a {
+	margin: 0 0 0 0;
+}
+#venstremeny ul li.current_page_item ul li.page_item {
+display: block;
+}
+#venstremeny ul li.current_page_item ul li.page_item a,
+#venstremeny ul li.current_page_parent ul li.page_item a,
+#venstremeny ul li.page_item ul li.page_item a {
+	background: url(images/submeny-hvit.png) no-repeat right center #EEEEEE;
+	display: block;
+	}
+#venstremeny ul li.current_page_parent ul li.current_page_item a {
+	background: url(images/submeny-venstre-pil-mot-hoyre.png) no-repeat right center #DDDDDD;
+	display: block;
+	}
+#venstremeny ul li.page_item ul li.page_item a:hover {
+	background: url(images/submeny-venstre-pil-mot-hoyre.png) no-repeat right center #DDDDDD;
+	}
+.entry-meta,
+.entry-utility {
+	font-size: 0.9em;
+	color: #AAAAAA;
+	margin-bottom: 0.6em;
+	}
+.hovedfelt-venstre #post-meta {
+	margin: 0 0 20px 0;
+	float: left;
+	font-size: 0.8em;
+	color: #AAAAAA;
+	}
+.tid,
+.kategori,
+.tagger {
+	font-size: 0.8em;
+	}
+.hovedfelt-venstre #post-meta p.tid {
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+	border-bottom: 1px dotted #AAAAAA;
+	}
+.hovedfelt-venstre #post-meta p.tagger {
+	margin-top: 2px;
+	padding-top: 2px;
+	border-top: 1px dotted #AAAAAA;
+	}
+.hovedfelt-venstre .post {
+	float: right;
+	width: 420px;
+	margin-bottom: 10px;
+ 	}
+.hovedfelt-venstre .full-bredde {
+	width: 620px;
+ 	}
+.hovedfelt-venstre .sokeresultat {
+	margin-bottom: 0px;
+ 	}
+.hovedfelt-venstre .post-forside {
+	margin-bottom: 10px;
+ 	}
+.hovedfelt-venstre .post p, 
+.hovedfelt-venstre .post-forside p {
+	margin-bottom: 0.8em;
+ 	}
+.hovedfelt-venstre .post blockquote {
+	padding-left: 30px;
+	font-size: 2em;
+	}
+.hovedfelt-venstre h1 {
+	font-size: 2em;
+	margin-bottom: 0.1em;
+ 	}
+.hovedfelt-venstre .post h2,
+.hovedfelt-venstre .page h2 {
+	font-size: 1.4em;
+	margin-top: 1.5em;
+ 	}
+.hovedfelt-venstre .nyhetssaker.full-bredde h2 {
+	font-size: 1.7em;
+	margin-top: 0.5em;
+ 	}
+.hovedfelt-venstre .sokeresultat h2 {
+	margin-top: 0.5em;
+ 	}
+.hovedfelt-venstre .post h3 {
+	font-size: 1.2em;
+	margin-top: 0.3em;
+ 	}
+.hovedfelt-venstre .post h4 {
+	font-size: 1.1em;
+	margin-top: 0.3em;
+ 	}
+.hovedfelt-venstre .post h5,
+.hovedfelt-venstre .post h6 {
+	font-size: 1em;
+	margin-top: 0.3em;
+ 	}
+.hovedfelt-venstre .post ul {
+	margin: 0.8em 0;
+ 	}
+.hovedfelt-venstre ol {
+	list-style:decimal;
+	list-style-position: inside;
+	margin: 0.8em 0;
+	}
+.hovedfelt-venstre .post ul li {
+ 	background: url(images/ikon-punkt-graa.png) no-repeat left center;
+ 	padding: 0 0 0 20px;
+ 	}
+#nav-below {
+	clear: both;
+	border-top: 1px dotted #AAAAAA;
+	padding-top: 10px;
+	font-size: 0.9em;
+	}
+.nav-previous {
+	float: left;
+	}
+.nav-next {
+	float: right;
+	}
+.rss-feed {
+	margin-bottom: 20px;
+	font-size: 0.9em;
+	}
+.rss-feed a {
+	background: url('images/ikon-rss.png') no-repeat left center;
+	color: #AAAAAA;
+	padding: 1px 0 0 22px;
+	}
+#smal-kollonne {
+	float: left;
+	padding-left: 20px;
+	width: 180px;
+	}
+#smal-kollonne .blogg-wrapper {
+	margin-bottom: 20px;
+	}
+#smal-kollonne .gronn-boks {
+	background-color: #e6eed1;
+	margin-bottom: 20px;
+	padding: 15px 20px 20px 20px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+.velkomsttekst {
+	background: url('images/bakgrunn-oransj-forlopning.png') repeat-x center bottom #f39721;
+	color: white;
+	margin: 0 0 20px 0;
+	padding: 15px 20px 20px 20px;
+	float: right;
+	width: 300px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	}
+.velkomsttekst h2 {
+	font-size: 1.5em;
+	margin: 0 0 3px 0;
+	}	
+#hovedfelt-hoyre {
+	float: right;
+	width: 320px;
+	}
+	
+/* Bli medlem */
+#hovedfelt-hoyre .bli-medlem a {
+	background: url('images/bli-medlem.png') no-repeat left top;
+	width: 320px;
+	height: 87px;
+	text-indent: -500px;
+	display: block;
+ 	overflow: hidden;	
+ 	}	
+#kalender-wrapper {
+	border-bottom: 1px solid #429a3d;
+	float: right;
+	margin: 0 0 20px 0;
+	width: 320px;
+	}
+#kalender-wrapper h2 {
+/*	background: url('images/bakgrunn-gronn-forlopning.png') repeat-x center bottom #429a3d; */
+	color: white;
+	margin: 0 0 10px 0;
+	padding: 5px 5px 5px 10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	}
+.kalenderinnlegg {
+	margin: 0 0 10px 0;
+	}
+.bli-medlem {
+	margin: 0 0 20px 0;
+	}
+.wp-caption {
+float: left;
+}
+.wp-caption .wp-caption-text {
+font-size: 0.9em;
+color: #AAAAAA;
+}
+
+/* LETT SKJEMA STYLING */
+
+form {
+	width: 320px;
+	text-align: left;
+}
+
+fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+legend {
+	display: none;
+}
+
+form h3 {
+	clear: both;
+	padding: 5px 0px 10px 0px;
+	font-size: 14px;
+}
+
+form label {
+	display: block;
+	width: 200px;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 10px 0px 5px 0px;
+}
+
+form label.smalltext {
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0px 0px 12px 0px;
+}
+
+form label.smalltext input {
+	display: block;
+	width: 150px;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 0px 0px 0px 0px;
+}
+
+form input {
+	display: block;
+	margin-top: 3px;
+}
+
+form label.bigtext {
+	clear: left;
+	padding: 10px 5px 0 0;
+}
+
+form label.bigtext input {
+	float: left;
+	width: 310px;
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+form label.bigtext2 {
+	clear: left;
+	padding: 0px 5px 0 0;
+}
+
+form label.bigtext2 input {
+	float: left;
+	width: 310px;
+	margin: 0 0 10px 0;
+}
+
+form label.smalltext {
+	float: left;
+	margin: 10px 10px 0px 0px;
+	width: 150px;
+}
+
+form label.field-zip {
+	float: left;
+	width: 150px;
+	margin: 10px 10px 0 0;
+}
+
+.smallform {
+
+}
+
+.zipcode {
+	float: left;
+	clear: both;
+}
+
+form label.radioitem {
+	clear: none;
+	margin: 0px 0px 0px 25px;
+	padding: 0px 0px 15px 0px;
+}
+
+textarea {
+	display: block;
+}
+
+
+form textarea {
+	margin-top: 3px;
+}
+
+input.button {
+float: left;
+clear: left;
+}
+
+
+/* WIDGETS */
+/* MAA RYDDES OPP I, ER TOTALT KAOS AKKURAT NAA */
+
+#sidebar #widget-1 h2 {
+	margin: 0 0 10px 0;
+	font-size: 1.2em;
+	}
+#sidebar2 #widget-1 h2,
+#sidebar3 #widget-1 h2 { 
+	display: none;
+	}
+#sidebar #widget-1 {
+	margin: 0 0 20px 0;
+	width: 280px;
+	}
+
+#sidebar3 #widget-1 {
+	background-color: #DDDDDD;
+	float: right;
+	padding: 15px 20px;
+	margin: 0 0 20px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 280px;
+	}
+#sidebar3 #widget-1 ul li {
+	margin: 0 0 0 0;
+	}
+
+/* TWITTER */
+
+#sidebar2 #widget-1 a.aktt_tweet_time,
+#sidebar2 #widget-1 a.aktt_tweet_reply {
+	color: #999999;
+	}
+#sidebar2 #widget-1 .aktt_tweets .aktt_credit {
+	font-size: 0.9em;
+	color: #999999;
+	}
+#sidebar2 #widget-1 .aktt_tweets ul li {
+	margin-bottom: 0.75em;
+	font-size: 0.9em;
+	}
+#sidebar2 #widget-1 .aktt_tweets ul li.aktt_more_updates {
+	float: right;
+	margin-bottom: 0;
+	}
+#sidebar2 #widget-1 div {
+	background: url('images/ikon-stor-twitter.png') no-repeat 20px 16px #429a3d;
+	background-color: #bff2ff; 
+	float: right;
+	padding: 43px 20px 16px 20px;
+	margin: 0 0 20px 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	}
+
+/* TWITTER SLUTT*/
+
+
+
+
+
+
+/* FOOTER */
+
+#footer {
+	border-top: 10px solid #CCCCCC;
+	clear: both;
+	color: #AAAAAA;
+	font-size: 0.8em;
+	padding: 10px 0 50px 0;
+	float: left;
+	width: 960px;
+	margin-top: 20px;
+	}
+#footer a {
+	color: #AAAAAA;
+	}
+#footer .alignleft{
+	width: 60%;
+	}
+#footer .alignright {
+	text-align: right;
+	width: 40%;
+	}
+.alignleft {
+	float: left;
+	}
+.alignright {
+	float: right;
+	}
+
+/* Kommentarfelt */
+
+#comments {
+	float: left;
+	border-top: 3px solid #CCCCCC;
+	padding-top: 10px;
+	margin-top: 10px;
+	width: 620px;
+	}
+#comments h3 {
+	font-size: 1.2em;
+	margin-top: 1.5em;
+	}
+#comments ol {
+	margin-top: 1.5em;
+	list-style:none;
+	list-style-position: none;
+	margin: 0.8em 0;
+	}
+#comments ol li {
+	margin-top: 5px;
+	padding: 11px 15px 10px 15px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-bottom: 1px solid #DDDDDD;
+	background: url('images/kommentarfelt-hvit-pil-ned.png') no-repeat 575px top #E9E9E9;
+	}
+#comments ol li .comment-author {
+	font-size: 1.2em;
+	}
+#comments ol li .comment-meta {
+	font-size: 0.9em;
+	color: #AAAAAA;
+	margin-bottom: 0.2em;
+	}
+#comments ol li .comment-content p {
+	margin-bottom: 0.5em;
+	}
+#comments ol .even{
+	background-color: #E9E9E9;
+	}
+#comments ol .odd{
+	background-color: #F5F5F5;
+	}
+#comments ol .byuser { /* For aa vise at en fra CISV har kommentert*/
+	background-color: #d6f4ff;
+	}
+#comments img.avatar {
+	float: right;
+	width: 50px;
+	height: 50px;
+	margin: 3px 0 15px 20px;
+	}
+#comment-notes {
+	font-size: 0.9em;
+	color: #AAAAAA;
+	}
+form#commentform .form-section {
+	margin-top: 10px;
+	}
+form#commentform textarea,
+form#commentform .form-input input {
+	border: 1px solid #CCCCCC;
+	padding: 3px 5px 5px 5px;
+	width: 608px;
+	font: 100%/1.5 Verdana, Tahoma, Arial, Helvetica, Sans-Serif;
+	margin: 5px 0;
+	}
+form#commentform .required{
+	color: #ed7f28;
+	}
+form#commentform label {
+	font-weight: bold;
+	}
+.form-submit input#submit {
+	border: 1px solid #CCCCCC;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	padding: 5px 10px;
+	background-color: #EDEDED;
+	}
+.form-submit input#submit:hover {
+	border: 1px solid #333333;
+	background-color: #dEDEDE;
+	}

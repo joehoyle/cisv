@@ -1,0 +1,69 @@
+/*--------------------------------
+	CSS file if thumbs enabled
+---------------------------------*/
+
+#featured{
+	width:405px;
+	position:relative;
+	height:248px;
+	background-color:#fafaf9;
+	overflow:hidden;
+}
+
+#featured ul#upz-slideshow-navigation{
+	position:absolute;
+	top:0; right:0;
+	list-style:none;
+	padding:0; margin:0;
+	width:208px;
+}
+
+#featured ul#upz-slideshow-navigation li {
+	width:100%;
+	float:left;
+	cursor:pointer;
+}
+
+#featured ul#upz-slideshow-navigation li img { float:left; }
+
+#featured ul#upz-slideshow-navigation li.activeSlide {
+	background:#cccccc;
+}
+
+#featured ul#upz-slideshow-navigation li a {
+	float:left;
+	clear:both;
+}
+
+#featured ul#upz-slideshow-navigation li span{
+	float:left;
+}
+
+
+
+#featured  .info{ 
+	position:absolute; 
+	bottom:0; left:0; 
+	height:70px; 
+	background: url('../img/transparent-bg.png'); 
+}
+#featured .info h2{ 
+	font-size:14px; font-family:Tahoma, Arial, Helvetica, sans-serif; 
+	color:#fff; padding:5px; margin:0;
+	overflow:hidden; 
+}
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:#fff; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}

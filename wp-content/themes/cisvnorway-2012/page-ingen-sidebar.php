@@ -1,0 +1,28 @@
+<?php
+/*
+Template Name: Full bredde
+*/
+?>
+			<?php get_header(); ?>
+
+			<!-- Hoved-wrapper -->
+			<div id="hoved-wrapper">
+				<div>
+					<?php the_post(); ?>
+					<div class="custom_field_image">
+
+					</div>
+
+ 					<div id="post-<?php the_ID(); ?>" class="post full-bredde">
+ 						<h1 class="innlegg-tittel"><?php the_title(); ?></h1>
+						<div class="innlegg-innhold">
+							<?php the_content(); ?>
+							<?php wp_link_pages('before=<div class="page-link">' . __( 'Sider:', 'cisv' ) . '&after=</div>') ?>										</div><!-- .innlegg-innhold -->
+					</div><!-- #post-<?php the_ID(); ?> -->	
+				
+				</div>
+				
+		
+			</div>
+		
+		<?php get_footer(); ?>

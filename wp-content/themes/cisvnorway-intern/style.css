@@ -1,0 +1,16 @@
+/*
+Theme Name: CISV norway intern
+Theme URI: http://cisv.no/
+Description: Child Theme for CISV norway intern
+Author: Kristian Kalvå
+Author URI: http://cisv.no/
+Template: cisvnorway_old
+Version: 1.0
+*/
+ 
+@import url("../cisvnorway/style.css");
+@import url("../cisvnorway/lokallag.css");
+
+#lokallagmeny{
+	background-color: rgb(0,150,0);
+}

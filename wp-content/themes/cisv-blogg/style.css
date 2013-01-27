@@ -1,0 +1,15 @@
+/*
+Theme Name:     CISV norge blogg
+Theme URI:      http: //cisv.no/
+Description:    Child theme for the Twenty Eleven theme 
+Author:         Kristian Kalvå
+Author URI:     http: //kristiankalvaa.com
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
+
+h1, h2, h3, h4, h5, h6, nav {
+	font-family: Interstate, sans-serif;
+}

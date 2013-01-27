@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Blogroll RSS Widget\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-07 13:59+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: talksina <talksina@gmail.com>\n"
+"Language-Team: Crazy Girl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: blogroll-widget-rss.php:28
+msgid "The recent posts of your blogroll links"
+msgstr "Post più recenti dei link del blogroll"
+
+#: blogroll-widget-rss.php:182
+msgid "Make sure, that you have entered the right RSS Addresses to your links in the Links Subpanel. Otherwise this plugin will not work correctly. No item is shown when a wrong or no RSS Address is entered!"
+msgstr "Assicurarsi di aver inserito il link RSS corretto nel pannello del blogroll altrimenti il plugin non funziona: nessun post può essere mostrato se non ci sono feed!"
+
+#: blogroll-widget-rss.php:185
+msgid "Widget Settings:"
+msgstr "Impostazioni widget: "
+
+#: blogroll-widget-rss.php:188
+msgid "Title:"
+msgstr "Titolo: "
+
+#: blogroll-widget-rss.php:193
+msgid "Display items:"
+msgstr "Mostra elementi: "
+
+#: blogroll-widget-rss.php:195
+msgid " (-1 will display all items)"
+msgstr "(-1 mostra tutti gli elementi)"
+
+#: blogroll-widget-rss.php:199
+msgid "Display items from link category:"
+msgstr "Mostra elementi dalla categoria di link: "
+
+#: blogroll-widget-rss.php:200
+msgid "Select Link Category"
+msgstr "Seleziona categoria di link"
+
+#: blogroll-widget-rss.php:202
+msgid "All Links"
+msgstr "Tutti i link"
+
+#: blogroll-widget-rss.php:214
+msgid "Item order:"
+msgstr "Ordine degli elementi: "
+
+#: blogroll-widget-rss.php:215
+msgid "Select Item Order"
+msgstr "Seleziona ordine elementi"
+
+#: blogroll-widget-rss.php:217
+msgid "Link Name Ascending"
+msgstr "Nome link in ordine crescente"
+
+#: blogroll-widget-rss.php:218
+msgid "Link Name Descending"
+msgstr "Nome link in ordine decrescente"
+
+#: blogroll-widget-rss.php:219
+msgid "Link ID Ascending"
+msgstr "ID link crescente"
+
+#: blogroll-widget-rss.php:220
+msgid "Link ID Descending"
+msgstr "ID link decrescente"
+
+#: blogroll-widget-rss.php:221
+msgid "Random Order"
+msgstr "Ordine casuale"
+
+#: blogroll-widget-rss.php:223
+msgid "(\"Random Order\" is recommended for less than all items)"
+msgstr "(\"Ordine casuale\" è consigliato per meno di 'tutti i link')"
+
+#: blogroll-widget-rss.php:226
+msgid "Items Configuration:"
+msgstr "Configurazione elementi: "
+
+#: blogroll-widget-rss.php:232
+msgid "Show link images:"
+msgstr "Mostra immagini link: "
+
+#: blogroll-widget-rss.php:233
+msgid "Select if you want to show images"
+msgstr "Decidi se vuoi mostrare le immagini"
+
+#: blogroll-widget-rss.php:235
+msgid "Show no images"
+msgstr "Non mostrare immagini"
+
+#: blogroll-widget-rss.php:236
+msgid "Show my own images"
+msgstr "Mostra le mie immagini"
+
+#: blogroll-widget-rss.php:237
+msgid "Create and show thumbnails"
+msgstr "Crea e mostra thumbnail"
+
+#: blogroll-widget-rss.php:243
+msgid "Pixel (image size)"
+msgstr "Pixel (dimensioni immagine)"
+
+#: blogroll-widget-rss.php:258
+msgid "Show blogroll links ?"
+msgstr "Mostra link del blogroll?"
+
+#: blogroll-widget-rss.php:264
+#: blogroll-widget-rss.php:290
+msgid "Add rel=\"nofollow\" ?"
+msgstr "Aggiungi rel=nofollow?"
+
+#: blogroll-widget-rss.php:278
+msgid "Display feed post links:"
+msgstr "Mostra i link dei post rss: "
+
+#: blogroll-widget-rss.php:280
+msgid "(between 1 and 10)"
+msgstr "(da 1 a 10)"
+
+#: blogroll-widget-rss.php:284
+msgid "Shorten feed post link text ?"
+msgstr "Abbrevia testo dei feed?"
+
+#: blogroll-widget-rss.php:294
+msgid "shorten to"
+msgstr "Abbrevia in "
+
+#: blogroll-widget-rss.php:296
+msgid "characters"
+msgstr "caratteri"
+
+#: blogroll-widget-rss.php:311
+msgid "Show feed post excerpts ?"
+msgstr "Mostra riassunti post rss?"
+
+#: blogroll-widget-rss.php:317
+msgid "Characters for excerpts"
+msgstr "Caratteri per i riassunti"
+
+#: blogroll-widget-rss.php:318
+msgid "(between 10 and 999)"
+msgstr "(da 10 a 999)"
+
+#: blogroll-widget-rss.php:333
+msgid "Donate an item to plugin author ?"
+msgstr "Linkback all'autore?"
+
+#: blogroll-widget-rss.php:334
+msgid "If you like this plugin I would be happy if you donate an item in your Blogroll to my Crazy Girls Tipps Blog (if it isnt in your Blogroll yet)."
+msgstr "Se ti piace questo plug-in vorrei fosse messo un link a crazy girl nel tuo blogroll"
+
+#: blogroll-widget-rss.php:416
+msgid "No RSS Addresses are entered to your links in the Links SubPanel, therefore no items can be shown!"
+msgstr "Nel pannello rss non sono stati aggiunti feed, quindi non può essere mostrato alcun post."
+
+#~ msgid "Show website thumbnails ?"
+#~ msgstr "Thumbnails anzeigen ?"
+

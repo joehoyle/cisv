@@ -1,0 +1,380 @@
+# Traduction française par Jérôme Fabre http://jeromefabre.fr
+# This file is distributed under the same license as the member-access package.
+# Jérôme Fabre <travail@jeromefabre.fr>, 2011.
+#
+msgid   ""
+msgstr  "Project-Id-Version: Member Access 1.1\n"
+        "Report-Msgid-Bugs-To: WordPress <wordpress@chrisabernethy.com>\n"
+        "POT-Creation-Date: 2011-12-15 11:28-0500\n"
+        "PO-Revision-Date: 2011-12-12 18:19+0100\n"
+        "Last-Translator: J&eacute;r&ocirc;me Fabre <travail@jeromefabre.fr>\n"
+        "Language-Team: WordPress <wordpress@chrisabernethy.com>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=UTF-8\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: lib/MemberAccess/Structure/View.php:65
+#, php-format
+msgid   "Cannot find view script %1$s in file %2$s on line %3$d"
+msgstr  ""
+
+#: lib/MemberAccess/Structure.php:63
+#, php-format
+msgid   "Undefined property via __get(): %1$s in file %2$s on line %3$d"
+msgstr  ""
+
+#: lib/MemberAccess.php:372
+msgid   "Everyone"
+msgstr  "Tout le monde"
+
+#: lib/MemberAccess.php:373
+msgid   "Members"
+msgstr  "Membres"
+
+#: lib/MemberAccess.php:375
+msgid   "Default (Everyone)"
+msgstr  "Par d&eacute;faut (Tout le monde)"
+
+#: lib/MemberAccess.php:377
+msgid   "Default (Members)"
+msgstr  "Par d&eacute;faut (Membres)"
+
+#: lib/MemberAccess.php:434
+msgid   "Visibility"
+msgstr  "Visibilité"
+
+#: lib/MemberAccess.php:459 lib/MemberAccess.php:539
+#, php-format
+msgid   "%s Settings"
+msgstr  "%s Param&egrave;tres"
+
+#: lib/MemberAccess.php:460
+msgid   "Settings"
+msgstr  "Param&egrave;tres"
+
+#: lib/MemberAccess.php:514
+msgid   "Settings have been saved."
+msgstr  "Les param&egrave;tres ont &eacute;t&eacute enregistr&eacute;"
+
+#: lib/MemberAccess.php:583
+msgid   "By default, pages are currently visible only to members. You can "
+        "override that here or continue to have this page honor the default "
+        "visibility settings."
+msgstr  "Par d&eacute;faut, les pages ne sont visibles que par les membres. "
+        "Vous pouvez modifier ces r&eacute;glages ici ou respecter les "
+        "param&egrave;tres par d&eacute;faut."
+
+#: lib/MemberAccess.php:589
+msgid   "By default, pages are currently visible to everyone. You can override "
+        "that here or continue to have this page honor the default visibility "
+        "settings."
+msgstr  "Par d&eacute;faut, les pages sont visibles par tout le monde. Vous "
+        "pouvez modifier ces r&eacute;glages ici ou conserver les param&egrave;"
+        "tres par d&eacute;faut."
+
+#: lib/MemberAccess.php:613
+msgid   "By default, posts are currently visible only to members. You can "
+        "override that here or continue to have this post honor the default "
+        "visibility settings."
+msgstr  "Par d&eacute;faut, les articles ne sont visibles que par les membres. "
+        "Vous pouvez modifier ces r&eacute;glages ici ou respecter les "
+        "param&egrave;tres par d&eacute;faut."
+
+#: lib/MemberAccess.php:619
+msgid   "By default, posts are currently visible to everyone. You can override "
+        "that here or continue to have this post honor the default visibility "
+        "settings."
+msgstr  "Par d&eacute;faut, les articles sont visibles par tout le monde. Vous "
+        "pouvez modifier ces r&eacute;glages ici ou respecter les param&egrave;"
+        "tres par d&eacute;faut."
+
+#: lib/MemberAccess.php:716
+msgid   "A database error was encountered, overrides have not been cleared."
+msgstr  "Il y a eu une &eacute;rreur avec la base de données, les exceptions "
+        "n'ont pas &eacute;t&eacute; &eacute;ffac&eacute;es"
+
+#: lib/MemberAccess.php:718
+msgid   "Overrides have been cleared."
+msgstr  "Les exceptions ont &eacute;t&eacute; &eacute;ffac&eacute;es."
+
+#: views/metabox-page.phtml:23
+msgid   "Ignore the default settings and make this page visible to everyone"
+msgstr  "Ignorer les param&egrave;tres globaux et rendre cette page visible "
+        "par tout le monde."
+
+#: views/metabox-page.phtml:24
+msgid   "Ignore the default settings and make this page visible only to members"
+msgstr  "Ignorer les param&egrave;tres globaux et rendre cette page visible "
+        "uniquement par les membres."
+
+#: views/metabox-page.phtml:25
+msgid   "Honor the default page visibility settings"
+msgstr  "Conserver les param&egrave;tres de visibilité par d&eacute;faut."
+
+#: views/metabox-post.phtml:23
+msgid   "Ignore the default settings and make this post visible to everyone"
+msgstr  "Ignorer les param&egrave;tres globaux et rendre cet article visible "
+        "par tout le monde."
+
+#: views/metabox-post.phtml:24
+msgid   "Ignore the default settings and make this post visible only to members"
+msgstr  "Ignorer les param&egrave;tres globaux et rendre cette page visible "
+        "uniquement par les membres."
+
+#: views/metabox-post.phtml:25
+msgid   "Honor the default post visibility settings"
+msgstr  "Conserver les param&egrave;tres de visibilité par d&eacute;faut."
+
+#: views/options-page.phtml:33
+msgid   "Page Settings"
+msgstr  "Param&egrave;tres pour les pages"
+
+#: views/options-page.phtml:36
+msgid   "By default, only members can view pages"
+msgstr  "Par d&eacute;faut, seul les membres peuvent voir les pages."
+
+#: views/options-page.phtml:37
+msgid   "If this option is enabled, only members will be able to view pages. "
+        "This setting can be overridden for individual pages."
+msgstr  "Si cette option est activ&eacute;e, seuls les membres pourront voir "
+        "les pages. Ce choix peut être modifi&eacute; pour chaque page "
+        "individuellement."
+
+#: views/options-page.phtml:39 views/options-page.phtml:63
+msgid   "Perform redirect for non-members"
+msgstr  "Effectuer une redirection pour les non-membres."
+
+#: views/options-page.phtml:41
+msgid   "If a non-member accesses a page that is viewable only by members, "
+        "should the user be redirected? If this option is enabled, the user "
+        "will be redirected to the page chosen in the dropdown, otherwise, the "
+        "standard \"Not Found\" page will be displayed."
+msgstr  "Si un non-membre acc&egrave;de &agrave; une page r&eacute;serv&eacute;"
+        "e aux membres, l'utilisateur doit-il &ecirc;tre redirig&eacute;? Si "
+        "cette option est activ&eacute;, l'utilisateur sera redirig&eacute; "
+        "vers une page choisie dans la liste d&eacute;roulante, autrement, la "
+        "page standard \"404 page non trouv&eacute;e\" sera affich&eacute;e."
+
+#: views/options-page.phtml:45 views/options-page.phtml:69
+#: views/options-page.phtml:93 views/options-page.phtml:117
+#: views/options-page.phtml:141
+msgid   "Wordpress Login Page"
+msgstr  "Page d'identification wordpress"
+
+#: views/options-page.phtml:50 views/options-page.phtml:74
+#: views/options-page.phtml:122
+msgid   "Note that if you select \"Wordpress Login Page\" from the dropdown, "
+        "the user will be sent back to the originally requested page after "
+        "logging in."
+msgstr  "Notez que si vous s&eacute;lectionnez \"Page d'identification "
+        "wordpress\" dans la liste d&eacute;roulante, l'utilisateur sera "
+        "redirig&eacute; vers la page qu'il cherchait à atteindre, après "
+        "identification."
+
+#: views/options-page.phtml:57
+msgid   "Post Settings"
+msgstr  "Param&eacute;trage des articles."
+
+#: views/options-page.phtml:60
+msgid   "By default, only members can view posts"
+msgstr  "Par d&eacute;faut, seuls les membres peuvent voir les articles."
+
+#: views/options-page.phtml:61
+msgid   "If this option is enabled, only members will be able to view posts. "
+        "This setting can be overridden for individual posts."
+msgstr  "Si cette option est activ&eacute;e, seul les membres pourront voir "
+        "les articles. Ce choix peut &ecirc;tre modifi&eacute; pour chaque "
+        "article individuellement."
+
+#: views/options-page.phtml:65
+msgid   "If a non-member accesses a post that is viewable only by members, "
+        "should the user be redirected? If this option is enabled, the user "
+        "will be redirected to the page chosen in the dropdown, otherwise, the "
+        "standard \"Not Found\" page will be displayed."
+msgstr  "Si un non-membre acc&egrave;de &agrave; un article r&eacute;"
+        "serv&eacute;e aux membres, l'utilisateur doit-il &ecirc;tre "
+        "redirig&eacute;? Si cette option est activ&eacute;, l'utilisateur "
+        "sera redirig&eacute; vers une page choisie dans la liste d&eacute;"
+        "roulante, autrement, la page standard \"404 page non trouv&eacute;e\" "
+        "sera affich&eacute;e."
+
+#: views/options-page.phtml:81
+msgid   "Posts Page Settings"
+msgstr  "R&eacute;glage des pages d'articles"
+
+#: views/options-page.phtml:84
+msgid   "Posts page includes excerpts of content viewable only by members"
+msgstr  "Les pages au format blog contiennent des extraits d'articles visibles "
+        "uniquement par les membres."
+
+#: views/options-page.phtml:85
+msgid   "Your posts page is configured in Settings->Reading, and is either "
+        "your home page when you elect to display your latest posts on the "
+        "home page, or it is the static page that you designate as your posts "
+        "page. Do you want your posts page to include excerpts of items that "
+        "are viewable only by members? If this option is not enabled, these "
+        "items will be omitted entirely from your posts page."
+msgstr  "Votre page d'article est configur&eacute;e dans R&eacute;"
+        "glages>Lecture, et est aussi votre page d'accueil si vous avez choisi "
+        "d'afficher vos derniers articles sur votre page d'accueil, ou bien "
+        "c'est la page statique que vous avez d&eacute;sign&eacute;e comme "
+        "votre page d'article. Voulez vous que votre page d'articles pr&eacute;"
+        "sente des extraits d'articles visibles uniquement par les membres? Si "
+        "cette option n'est pas activ&eacute;e, ces &eacute;l&eacute;ments "
+        "seront totalement omis de vos pages d'articles."
+
+#: views/options-page.phtml:87
+msgid   "Perform redirect if all available posts page items are viewable only "
+        "by members"
+msgstr  "Effectuer une redirection si tous les articles concern&eacute;s sont "
+        "visibles seulement par les membres."
+
+#: views/options-page.phtml:89
+msgid   "If a non-member accesses the posts page, all items are viewable only "
+        "to members, and you have not opted to include excerpts of those items "
+        "on the posts page pages, should the user be redirected? If this "
+        "option is enabled, the user will be redirected to the page chosen in "
+        "the dropdown, otherwise, the standard \"Not Found\" page will be "
+        "displayed."
+msgstr  "Si un utilisateur non-membre acc&egrave;de &agrave; la page "
+        "d'articles, et que tous les articles ne sont visibles que par les "
+        "membres, et que vous n'avez pas choisi d'inclure les extraits de ces "
+        "articles sur cette page, voulez-vous que l'utilisateur soit "
+        "redirig&eacute;? Si cette option est activ&eacute;e, l'utilisateur "
+        "sera redirig&eacute; vers la page choisie dans le menu déroulant, "
+        "sinon, la page standard \"404 page non trouv&eacute;e\" sera "
+        "affich&eacute;e."
+
+#: views/options-page.phtml:98
+msgid   "Note that if you select \"Wordpress Login Page\" from the dropdown, "
+        "the user will be sent back to the posts page after logging in."
+msgstr  "Notez que si vous s&eacute;lectionnez \"Page d'identification "
+        "wordpress\" dans la liste d&eacute;roulante, l'utilisateur sera "
+        "renvoy&eacute; vers la page d'articles après son identification."
+
+#: views/options-page.phtml:105
+msgid   "Archive Settings"
+msgstr  "param&egrave;tres des archives"
+
+#: views/options-page.phtml:108
+msgid   "Archive pages include excerpts of content viewable only by members"
+msgstr  "Les pages d'archives contiennent les extraits de contenus visibles "
+        "uniquement par les membres."
+
+#: views/options-page.phtml:109
+msgid   "Do you want archive pages to include excerpts of items that are "
+        "viewable only by members? If this option is not enabled, these items "
+        "will be omitted entirely from archive pages."
+msgstr  "Voulez-vous que les pages d'archives incluent des extraits d'&eacute;"
+        "l&eacute;ments qui ne sont visibles que par les membres? Si cette "
+        "option n'est pas activée,ces &eacute;l&eacute;ments seront totalement "
+        "absents de pages d'archives"
+
+#: views/options-page.phtml:111
+msgid   "Perform redirect if all available archive items are viewable only by "
+        "members"
+msgstr  "Effectuer une redirection si toutes les archives disponibles ne sont "
+        "accessibles qu'aux membres."
+
+#: views/options-page.phtml:113
+msgid   "If a non-member accesses an archive page for which all items are "
+        "viewable only to members, and you have not opted to include excerpts "
+        "of those items on archive pages, should the user be redirected? If "
+        "this option is enabled, the user will be redirected to the page "
+        "chosen in the dropdown, otherwise, the standard \"Not Found\" page "
+        "will be displayed."
+msgstr  "Si un utilisateur non-membre acc&egrave;de &agrave; une page "
+        "d'archive dans laquelle tous les contenus sont r&eacute;serv&eacute;s "
+        "aux membres, et que vous n'avez pas choisi d'inclure les extraits de "
+        "ces contenus dans les pages d'archives, l'utilisateur doit'il &ecirc;"
+        "tre redirig&eacute;? Si cette option est activ&eacute;e, "
+        "l'utilisateur sera redirig&eacute; vers la page choisie dans le menu "
+        "d&eacute;roulant, sinon, la page standard \"404 page non trouv&eacute;"
+        "e\" sera affich&eacute;e."
+
+#: views/options-page.phtml:129
+msgid   "Search Settings"
+msgstr  "Param&egrave;tres de recherche"
+
+#: views/options-page.phtml:132
+msgid   "Search results include excerpts of content viewable only by members"
+msgstr  "Les r&eacute;sultats de recherche incluent des extraits de contenus "
+        "visibles uniquement par les membres."
+
+#: views/options-page.phtml:133
+msgid   "Do you want search results to include excerpts of items viewable only "
+        "by members? If this option is not enabled, these items will be "
+        "omitted entirely from search results."
+msgstr  "Voulez vous que les r&eacute;sultats de recherche incluent des "
+        "extraits d'éléments r&eacute;serv&eacute;s aux membres? Si cette "
+        "option n'est pas activ&eacute;e, ces &eacute;l&eacute;ments seront "
+        "totalement exclus des r&eacute;sultats de recherche."
+
+#: views/options-page.phtml:135
+msgid   "Perform redirect if all search results are viewable only by members"
+msgstr  "Effectuer une redirection si tous les r&eacute;sultats de la "
+        "recherche ne sont visibles que par les membres."
+
+#: views/options-page.phtml:137
+msgid   "If a non-member performs a search for which all results are viewable "
+        "only to members, and you have not opted to include excerpts of those "
+        "items in search results, should the user be redirected? If this "
+        "option is enabled, the user will be redirected to the page chosen in "
+        "the dropdown, otherwise, the standard \"Not Found\" page will be "
+        "displayed."
+msgstr  "Si un utilisateur non-membre &eacute;ffectue une recherche pour "
+        "laquelle tous les contenus sont r&eacute;serv&eacute;s aux membres, "
+        "et que vous n'avez pas choisi d'inclure les extraits de ces contenus "
+        "dans les R&eacute;sultats de recherche, l'utilisateur doit'il &ecirc;"
+        "tre redirig&eacute;? Si cette option est activ&eacute;e, "
+        "l'utilisateur sera redirig&eacute; vers la page choisie dans le menu "
+        "d&eacute;roulant, sinon, la page standard \"404 page non trouv&eacute;"
+        "e\" sera affich&eacute;e."
+
+#: views/options-page.phtml:146
+msgid   "Note that if you select \"Wordpress Login Page\" from the dropdown, "
+        "the user will be sent back to the original search result listing "
+        "after logging in."
+msgstr  "Notez que si vous s&eacute;lectionnez \"Page d'identification "
+        "wordpress\" dans la liste d&eacute;roulante, l'utilisateur sera "
+        "renvoy&eacute; vers le résultat de la recherche après son "
+        "identification."
+
+#: views/options-page.phtml:153
+msgid   "RSS Settings"
+msgstr  "R&eacute;glages des flux RSS"
+
+#: views/options-page.phtml:156
+msgid   "RSS feeds include excerpts of content viewable only by members"
+msgstr  "Les flux RSS incluent des extraits d'&eacute;leacute;ments r&eacute;"
+        "serv&eacute;s aux membres."
+
+#: views/options-page.phtml:157
+msgid   "Do you want RSS feeds to include excerpts of items viewable only by "
+        "members? If this option is not enabled, these items will be omitted "
+        "entirely from RSS feeds."
+msgstr  "Voulez vous que les flux RSS incluent des extraits d'&eacute;l&eacute;"
+        "ments r&eacute;serv&eacute;s aux membres? Si cett option n'est pas "
+        "activ&eacute;e, ces &eacute;l&eacute;ments seont totalement exclus "
+        "des flux RSS."
+
+#: views/options-page.phtml:167
+msgid   "Save Changes"
+msgstr  "Enregistrer les Changements"
+
+#: views/options-page.phtml:168
+msgid   "Clear Post Overrides"
+msgstr  "Annuler les réglages de tous les articles"
+
+#: views/options-page.phtml:169
+msgid   "Clear Page Overrides"
+msgstr  "Annuler les réglages de toutes les pages"
+
+#: ../bootstrap.php:5
+msgid   "Member Access is a WordPress plugin that allows an administrator to "
+        "require that users be logged-in in order to view certain posts and "
+        "pages."
+msgstr  "Member Access est un plugin pour wordpress permettant &agrave; un "
+        "administrateur de demander aux utilisateurs de s'authentifier pour "
+        "accéder &agrave; certains articles et pages."

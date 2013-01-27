@@ -1,0 +1,35 @@
+
+.bup-message {
+	padding: 1px 10px 0 25px;
+	margin: 12px 0 10px 7px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.bup-message.ready {
+	background: url('../images/statusicon_normal.png') no-repeat;
+}
+
+.bup-message.warning {
+	background: url('../images/statusicon_warn.png') no-repeat;
+}
+
+.bup-message.error {
+	background: url('../images/statusicon_error.png') no-repeat;
+}
+
+.error {
+	font-weight: bold;
+	color: #800;
+}
+
+.stat {
+	border: 1px #ddd;
+	border-style: none none solid;
+	padding: 0 0 7px;
+}
+
+.stat.last {
+	border: none;
+	padding: 0;
+}

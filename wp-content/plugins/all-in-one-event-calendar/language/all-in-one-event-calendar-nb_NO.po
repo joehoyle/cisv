@@ -1,0 +1,2596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: All-in-One Event Calendar Plugin 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/all-in-one-event-calendar\n"
+"POT-Creation-Date: 2012-07-24 19:38:28+00:00\n"
+"PO-Revision-Date: 2012-08-27 15:37+0100\n"
+"Last-Translator: Kristian Kalvå <kristian@momentas.no>\n"
+"Language-Team: CISV norge <web.list@no.cisv.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-Language: Norwegian Bokmal\n"
+"X-Poedit-Country: NORWAY\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: app/controller/class-ai1ec-app-controller.php:359
+msgid "Select at least one user  group / page to subscribe"
+msgstr "Velg minst en brukerguppe/-side for å abonnere."
+
+#: app/controller/class-ai1ec-app-controller.php:360
+msgid "An unexpected error occurred, try reloading the page"
+msgstr "Noe uventet skjedde, vennligst prøv å reloade."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:361
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:254
+msgid "No subscriptions yet."
+msgstr "Ingen abonnement enda."
+
+#: app/controller/class-ai1ec-app-controller.php:362
+msgid "Please select no more than ten users / groups / pages at a time to avoid overloading Facebook Requests"
+msgstr "Vennligst ikke velg mer enn ti brukere/grupper/sider om gangen for å unngå å overbelaste Facebookforespørsler."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:364
+msgid "This feed is already being imported."
+msgstr "Dette feedet blir allerede importert."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:365
+msgid "Please enter a valid iCalendar URL."
+msgstr "Vennligst sett inn en gjeldende iCalendar webadresse (URL)."
+
+#: app/controller/class-ai1ec-app-controller.php:381
+msgid "Please enter a valid latitude. A valid latitude is comprised between +90 and -90."
+msgstr "Vennligst skriv inn en gyldig breddegrad. En gyldig breddegrad går mellom +90 og -90."
+
+#: app/controller/class-ai1ec-app-controller.php:382
+msgid "Please enter a valid longitude. A valid longitude is comprised between +180 and -180."
+msgstr "Vennligst skriv inn en gyldig lengdegrad. En gyldig lengdegrad går mellom +180 og -180."
+
+#: app/controller/class-ai1ec-app-controller.php:383
+msgid "When the \"Input coordinates\" checkbox is checked, \"Latitude\" is a required field."
+msgstr "Når \"Skriv koordinater\"-checkboksen er markert er \"Breddegrad\" et påkrevd felt."
+
+#: app/controller/class-ai1ec-app-controller.php:384
+msgid "When the \"Input coordinates\" checkbox is checked, \"Longitude\" is a required field."
+msgstr "Når \"Skriv koordinater\"-checkboksen er markert er \"Lengdegrad\" et påkrevd felt."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:388
+msgid "This setting cannot be changed in All-in-One Event Calendar Platform mode."
+msgstr "Denne innstillingen kan ikke forandres i kalenderplattformmodus."
+
+#: app/controller/class-ai1ec-app-controller.php:393
+msgid "You must specify both an app id and app secret to connect to Facebook"
+msgstr "Du må spesifiserte både en app-id og en app-hemlighet for å koble til Facebook"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:674
+#: app/controller/class-ai1ec-app-controller.php:675
+msgid "Calendar Themes"
+msgstr "Kalendertema"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:686
+#: app/controller/class-ai1ec-app-controller.php:687
+msgid "Calendar Feeds"
+msgstr "Kalenderabonnement"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:702
+#: app/controller/class-ai1ec-app-controller.php:703
+#: app/helper/class-ai1ec-platform-helper.php:111
+#: app/helper/class-ai1ec-settings-helper.php:339
+msgid "Calendar"
+msgstr "Kalender"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-app-controller.php:717
+#: app/controller/class-ai1ec-app-controller.php:718
+msgid "Upgrade"
+msgstr "Oppgrader"
+
+#: app/controller/class-ai1ec-app-controller.php:922
+#: app/controller/class-ai1ec-app-controller.php:951
+msgid "Scripts and styles should not be registered or enqueued until the %1$s, %2$s, or %3$s hooks."
+msgstr "Skript og stiler bør ikke registreres eller legges i kø før %1$s-, %2$s-, eller %3$s-koblingene."
+
+#: app/controller/class-ai1ec-app-controller.php:981
+msgid "You do not have sufficient permissions to update plugins for this site."
+msgstr "Du har ikke nødvendige rettigheter for å oppdatere innstikk på dette nettstedet."
+
+#: app/controller/class-ai1ec-app-controller.php:984
+msgid "Download package is needed and was not supplied. Visit <a href=\"http://time.ly/\" target=\"_blank\">time.ly</a> to download the newest version of the plugin."
+msgstr "Nedlastingspakke trengs og var ikke tilgjengelig. Besøk <a href=\"http://time.ly/\" target=\"_blank\">time.ly</a>for å laste ned nyeste versjon av instikket."
+
+#: app/controller/class-ai1ec-calendar-controller.php:314
+#: app/model/class-ai1ec-settings.php:423
+msgid "Posterboard"
+msgstr "Oppslagstavle"
+
+# @ all-in-one-event-calendar
+#. translators: "%s" represents the week's starting date
+#: app/controller/class-ai1ec-calendar-controller.php:505
+#: app/helper/class-ai1ec-calendar-helper.php:1015
+#: app/helper/class-ai1ec-calendar-helper.php:1024
+msgid "Week of %s"
+msgstr "Uke nr."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-calendar-controller.php:505
+msgid "F j"
+msgstr "F j"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-calendar-controller.php:563
+#: app/model/class-ai1ec-settings.php:427
+msgid "Agenda"
+msgstr "Liste"
+
+#: app/controller/class-ai1ec-duplicate-controller.php:84
+msgid "Clone this item"
+msgstr "Klon dette elementet."
+
+#: app/controller/class-ai1ec-duplicate-controller.php:85
+#: app/controller/class-ai1ec-duplicate-controller.php:514
+#: app/controller/class-ai1ec-duplicate-controller.php:515
+msgid "Clone"
+msgstr "Klone"
+
+#: app/controller/class-ai1ec-duplicate-controller.php:87
+#: app/controller/class-ai1ec-duplicate-controller.php:140
+#: app/controller/class-ai1ec-duplicate-controller.php:144
+msgid "Copy to a new draft"
+msgstr "Kopier til nytt utkast"
+
+#: app/controller/class-ai1ec-duplicate-controller.php:88
+msgid "New Draft"
+msgstr "Nytt utkast"
+
+#: app/controller/class-ai1ec-duplicate-controller.php:185
+msgid "No post to duplicate has been supplied!"
+msgstr "Ingen innlegg har blitt gjort tilgjengelig for duplisering!"
+
+#: app/controller/class-ai1ec-duplicate-controller.php:207
+msgid "Copy creation failed, could not find original:"
+msgstr "Opprettelse av kopi mislyktes. Fant ikke originalen:"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:379
+msgid "Publish"
+msgstr "Publiser"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:379
+msgid "Update"
+msgstr "Oppdater"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:381
+msgid "Submit for Review"
+msgstr "Innsend til bedømmelse"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:516
+msgid "Event updated. <a href=\"%s\">View event</a>"
+msgstr "Hendelse oppdatert. <a href=\"%s\">Vis begivenhet</a>"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:517
+msgid "Custom field updated."
+msgstr "Brukerdefineret felt er oppdatert."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:518
+msgid "Custom field deleted."
+msgstr "Brukerdefinert felt er slettet."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:519
+msgid "Event updated."
+msgstr "Hendelseer oppdatert."
+
+# @ all-in-one-event-calendar
+#. translators: %s: date and time of the revision
+#: app/controller/class-ai1ec-events-controller.php:521
+msgid "Event restored to revision from %s"
+msgstr "Hendelse gjendannet til revision av %s"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:522
+msgid "Event published. <a href=\"%s\">View event</a>"
+msgstr "Hendelse publisert. <a href=\"%s\">Vis Hendelse</a>"
+
+# @ default
+#: app/controller/class-ai1ec-events-controller.php:523
+msgid "Event saved."
+msgstr "Hendelse lagret."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:524
+msgid "Event submitted. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr "Hendelse innsendt.. <a target=\"_blank\" href=\"%s\">Forhåndsvisning av Hendelse</a>"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:525
+msgid "Event scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Preview event</a>"
+msgstr "Hendelse planlagt for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s\">Forhåndsvisning av Hendelse</a"
+
+# @ all-in-one-event-calendar
+#. translators: Publish box date format, see http:php.net/date
+#: app/controller/class-ai1ec-events-controller.php:527
+msgid "M j, Y @ G:i"
+msgstr "M j, Y kl. G:i"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-events-controller.php:528
+msgid "Event draft updated. <a target=\"_blank\" href=\"%s\">Preview event</a>"
+msgstr "Utkast til Hendelse er oppatert <a target=\"_blank\" href=\"%s\">Forhåndsvisning</a>"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-importer-controller.php:59
+msgid "The Events Calendar → All-in-One Event Calendar"
+msgstr "Hendelseskalenderen → All-in-One Event Calendar"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-importer-controller.php:60
+msgid "Imports events created using The Events Calendar plugin into the All-in-One Event Calendar"
+msgstr "Importerer Hendelseoppettet med \\\"The Events Calendar\\\" plugin (eldre utgave) til All-in-One-Event Calendar"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:60
+msgid "All-in-One Event Calendar: Settings"
+msgstr "All-in-One Event Calendar: Innstillinger"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:81
+msgid "All-in-One Event Calendar: Calendar Feeds"
+msgstr "All-in-One Event Calendar: Kalenderabonnement"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:112
+msgid "Settings Updated."
+msgstr "Innstillinger oppdatert."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:164
+msgctxt "meta box"
+msgid "General Settings"
+msgstr "Generelle innstillinger"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:173
+msgctxt "meta box"
+msgid "Advanced Settings"
+msgstr "Avanserte innstillinger"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:184
+msgctxt "meta box"
+msgid "Connection Settings"
+msgstr "Tilkoblingsinnstillinger"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:195
+#: app/controller/class-ai1ec-settings-controller.php:224
+msgctxt "meta box"
+msgid "Timely Support"
+msgstr "Timely support"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:215
+msgctxt "meta box"
+msgid "Feed Subscriptions"
+msgstr "Abonnement"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:240
+msgid "<a href=\"%s\">Settings</a>"
+msgstr "<a href=\"%s\">Innstillinger</a>"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:254
+msgid "<a href=\"%s\" target=\"_blank\">Donate</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Doner</a>"
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-settings-controller.php:255
+msgid "<a href=\"%s\" target=\"_blank\">Get Support</a>"
+msgstr "<a href=\"%s\" target=\"_blank\">Få hjelp</a>"
+
+#: app/controller/class-ai1ec-themes-controller.php:139
+msgid "Cheatin&#8217; uh?"
+msgstr "Jukser du?"
+
+#: app/controller/class-ai1ec-themes-controller.php:188
+#: app/controller/class-ai1ec-themes-controller.php:468
+msgid "Could not access filesystem."
+msgstr "Fikk ikke tilgang tl filsystemet."
+
+#: app/controller/class-ai1ec-themes-controller.php:191
+#: app/controller/class-ai1ec-themes-controller.php:471
+msgid "Filesystem error."
+msgstr "Feil med filsystemet."
+
+#: app/controller/class-ai1ec-themes-controller.php:196
+#: app/controller/class-ai1ec-themes-controller.php:476
+msgid "Unable to locate WordPress theme directory."
+msgstr "Kunne ikke finne WordPresstemamappen"
+
+#: app/controller/class-ai1ec-themes-controller.php:204
+#: app/controller/class-ai1ec-themes-controller.php:484
+msgid "Could not fully remove the theme %s."
+msgstr "Kunne ikke fjerne hele %s-temaet."
+
+#: app/controller/class-ai1ec-themes-controller.php:497
+#: app/controller/class-ai1ec-themes-controller.php:498
+#: app/controller/class-ai1ec-themes-controller.php:517
+msgid "Install Calendar Themes"
+msgstr "Installer kalendertema"
+
+#: app/controller/class-ai1ec-themes-controller.php:551
+msgid "Errors occurred while we tried to install your core Calendar Themes"
+msgstr "Det skjedde når vi prøvde å installere grunnkalendertemaene."
+
+#: app/controller/class-ai1ec-themes-controller.php:566
+msgid "Calendar themes were installed successfully"
+msgstr "Kalendertema installert."
+
+# @ all-in-one-event-calendar
+#: app/controller/class-ai1ec-themes-controller.php:569
+#: app/view/admin/themes-updated.php:19
+msgid "All-in-One Event Calendar Settings »"
+msgstr "All-in-One Event Calendar innstillinger &rarr;"
+
+#: app/controller/class-ai1ec-themes-controller.php:587
+#: app/controller/class-ai1ec-themes-controller.php:588
+#: app/view/admin/themes-updated.php:5
+msgid "Update Calendar Themes"
+msgstr "Oppdater kalendertema"
+
+#: app/controller/class-ai1ec-themes-controller.php:755
+msgid "<div class=\"error\"><p><strong>There was an error creating one of the theme folders.</strong> Please FTP to your web server and manually create <pre>%s</pre></p></div>"
+msgstr "<div class=\"error\"><p><strong>Kunne ikke opprette en av temamappene.</strong> Vennligst bruk FTP til webserveren og opprett <pre>%s</pre> manuelt.</p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:768
+msgid "<div class=\"error\"><p><strong>There was an error(\"%s\") while copying theme folders.</strong> Please FTP to your web server and manually copy <pre>%s</pre> to <pre>%s</pre></p></div>"
+msgstr "<div class=\"error\"><p><strong>Det skjedde noe feil (\"%s\") i løpet av kopiering av temamappene.</strong> Vennligst koble til webserveren din med FTP og kopier <pre>%s</pre> til <pre>%s</pre>.</p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:788
+msgid "<div class=\"error\"><p><strong>There was an error updating one of the files.</strong> Please FTP to your web server and manually copy <pre>%s</pre> to <pre>%s</pre></p></div>"
+msgstr "<div class=\"error\"><p><strong>Det skjedde en feil ved oppdatering av filene.</strong> Vennligst koble til webserveren din med FTP og kopier <pre>%s</pre> til <pre>%s</pre>.</p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:810
+msgid "<div class=\"error\"><p><strong>There was an error Deleting one of the folders.</strong> Please FTP to your web server and manually delete <pre>%s</pre></p></div>"
+msgstr "<div class=\"error\"><p><strong>Det skjedde en feil ved sletting av mappene.</strong> Vennligst koble til webserveren din med FTP og slett <pre>%s</pre>.</p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:829
+msgid "<div class=\"error\"><p><strong>There was an error Deleting one of the files.</strong> Please FTP to your web server and manually delete <pre>%s</pre></p></div>"
+msgstr "<div class=\"error\"><p><strong>Det skjedde en feil ved sletting av filene.</strong> Vennligst koble til webserveren din med FTP og slett <pre>%s</pre>.</p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:846
+msgid "<div id=\"message\" class=\"error\"><h3>Errors occurred while we tried to update your core Calendar Themes.</h3><p><strong>Please follow any instructions listed below or your calendar may malfunction:</strong></p></div>"
+msgstr "<div id=\"message\" class=\"error\"><h3>Feil oppsto når vi prøvde å oppdatere kalendertemaene.</h3><p><strong>Vennligst følg instruksjonene under, hvis ikke kan kalenderen slutte å virke:</strong></p></div>"
+
+#: app/controller/class-ai1ec-themes-controller.php:849
+msgid "<div id=\"message\" class=\"updated\"><h3>Your core Calendar Themes were updated successfully.</h3></div>"
+msgstr "<div id=\"message\" class=\"updated\"><h3>Kalendertemaene ble oppdatert uten problemer.</h3></div>"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:157
+msgctxt "Custom post type name"
+msgid "Events"
+msgstr "Hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:158
+msgctxt "Custom post type name (singular)"
+msgid "Event"
+msgstr "Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:159
+msgid "Add New"
+msgstr "Legg til ny"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:160
+msgid "Add New Event"
+msgstr "Legg til ny hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:161
+msgid "Edit Event"
+msgstr "Rediger Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:162
+msgid "New Event"
+msgstr "Ny Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:163
+msgid "View Event"
+msgstr "Vis Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:164
+msgid "Search Events"
+msgstr "Søk i hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:165
+msgid "No Events found"
+msgstr "Ingen Hendelser funnet"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:166
+msgid "No Events found in Trash"
+msgstr "Ingen Hendelser funnet i papirkurven"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:167
+msgid "Parent Event"
+msgstr "Overordnet Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:168
+msgid "Events"
+msgstr "Hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:215
+msgctxt "Event categories taxonomy"
+msgid "Event Categories"
+msgstr "Hendelseskategorier"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:216
+msgctxt "Event categories taxonomy (singular)"
+msgid "Event Category"
+msgstr "Hendelseskategori"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:223
+msgctxt "Event tags taxonomy"
+msgid "Event Tags"
+msgstr "Hendelsesstikkord"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:224
+msgctxt "Event tags taxonomy (singular)"
+msgid "Event Tag"
+msgstr "Hendelsesstikkord"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:231
+msgctxt "Event feeds taxonomy"
+msgid "Event Feeds"
+msgstr "Hendelsesfeeds"
+
+# @ default
+#: app/helper/class-ai1ec-app-helper.php:232
+msgctxt "Event feed taxonomy (singular)"
+msgid "Event Feed"
+msgstr "Hendelsesfeed"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:320
+msgid "Show All "
+msgstr "Vis alle "
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:353
+msgid "All Events <span class=\"update-plugins count-%d\" title=\"%d Pending Events\"><span class=\"update-count\">%d</span></span>"
+msgstr "Alle Hendelser<span class=\"update-plugins count-%d\" title=\"%d Pending Events\"><span class=\"update-count\">%d</span></span>"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:359
+msgid "All Events"
+msgstr "Alle Hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:437
+msgid "Event Details"
+msgstr "Hendelsesdetaljer"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:472
+msgid "Post Date"
+msgstr "Dato for opprettelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:473
+msgid "Event date/time"
+msgstr "Dato/tid for Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:691
+msgid "Welcome to the All-in-One Event Calendar, by Timely"
+msgstr "Velkommen til All-in-One Event Calendar, fra Timely."
+
+#: app/helper/class-ai1ec-app-helper.php:696
+msgid "Watch the introductory video »"
+msgstr "Se introduksjonsvideoen &rarr;"
+
+#: app/helper/class-ai1ec-app-helper.php:700
+#: app/helper/class-ai1ec-app-helper.php:769
+msgid "Dismiss"
+msgstr "Skjul"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:710
+msgid "Introducing the All-in-One Event Calendar, by Timely"
+msgstr "Vi presenterer All-in-One Event Calendar, fra Timely"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:720
+#: app/helper/class-ai1ec-app-helper.php:742
+#: app/helper/class-ai1ec-app-helper.php:757
+#: app/helper/class-ai1ec-app-helper.php:820
+msgid "All-in-One Event Calendar Notice"
+msgstr "All-in-One Event Calendar melding"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:789
+msgid "Select an option in the <strong>Calendar page</strong> dropdown list."
+msgstr "Velg et alternativ i <strong>Kalenderside</strong> nedtrekkslisten."
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:792
+msgid "Select an option in the <strong>Timezone</strong> dropdown list."
+msgstr "Velg et alternativ i <strong>Tidssone</strong> nedtrekkslisten."
+
+#: app/helper/class-ai1ec-app-helper.php:794
+msgid "Click <strong>Update Settings</strong>."
+msgstr "Klikk <strong>Oppdater innstillinger</strong>."
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:799
+msgid "The plugin is installed, but has not been configured. <a href=\"%s\">Click here to set it up now &raquo;</a>"
+msgstr "Innstikket er installert, men ennå ikke satt opp. <a href=\"%s\">Klikk her for å sette opp nå &rarr;</a>"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:807
+msgid "The plugin is installed, but has not been configured. Please log in as an Administrator to set it up."
+msgstr "Instikket er installert, men ennå ikke satt opp. Logg inn som administrator for at sette det opp."
+
+#: app/helper/class-ai1ec-app-helper.php:812
+msgid "<p>To set up the plugin:</p>"
+msgstr "<p>For å sette opp innstikket:</p>"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:827
+msgid "All-in-One Event Calendar Update"
+msgstr "All-in-One Event Calendar oppdatering"
+
+#: app/helper/class-ai1ec-app-helper.php:833
+msgid "Upgrade now"
+msgstr "Oppgader nå"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:853
+msgid "Event"
+msgid_plural "Events"
+msgstr[0] "Hendelse"
+msgstr[1] "Hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:865
+msgid "Event Category"
+msgid_plural "Event Categories"
+msgstr[0] "Hendelseskategori"
+msgstr[1] "Hendelseskategorier"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-app-helper.php:877
+msgid "Event Tag"
+msgid_plural "Event Tags"
+msgstr[0] "Hendelsesstikkord"
+msgstr[1] "Hendelsesstikkord"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-calendar-helper.php:881
+#: app/helper/class-ai1ec-calendar-helper.php:1057
+msgid "« Previous Events"
+msgstr "&larr; Eldre hendelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-calendar-helper.php:888
+#: app/helper/class-ai1ec-calendar-helper.php:1064
+msgid "Next Events »"
+msgstr "Nyere hendelser &rarr;"
+
+#. translators: "%s" represents the week's starting date
+#: app/helper/class-ai1ec-calendar-helper.php:923
+#: app/helper/class-ai1ec-calendar-helper.php:930
+msgid "j F Y"
+msgstr "j. F Y"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-calendar-helper.php:1016
+#: app/helper/class-ai1ec-calendar-helper.php:1025
+msgid "M j"
+msgstr "M j"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:372
+#: app/helper/class-ai1ec-events-helper.php:394
+msgid "No repeat"
+msgstr "Ingen gjentagelser"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:373
+#: app/helper/class-ai1ec-events-helper.php:395
+msgid "Every day"
+msgstr "Hver dag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:374
+#: app/helper/class-ai1ec-events-helper.php:396
+msgid "Every week"
+msgstr "Hver uke"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:375
+#: app/helper/class-ai1ec-events-helper.php:397
+msgid "Every month"
+msgstr "Hver måned"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:376
+#: app/helper/class-ai1ec-events-helper.php:398
+msgid "Every year"
+msgstr "Hvert år"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:378
+#: app/helper/class-ai1ec-events-helper.php:400
+msgid "Custom..."
+msgstr "Brukerdefineret..."
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:521
+msgid "first"
+msgstr "første"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:522
+msgid "second"
+msgstr "andre"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:523
+msgid "third"
+msgstr "tredje"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:524
+msgid "fourth"
+msgstr "fjerde"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:526
+msgid "last"
+msgstr "siste"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:531
+msgid "Sunday"
+msgstr "Søndag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:532
+msgid "Monday"
+msgstr "Mandag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:533
+msgid "Tuesday"
+msgstr "Tirsdag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:534
+msgid "Wednesday"
+msgstr "Onsdag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:535
+msgid "Thursday"
+msgstr "Torsdag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:536
+msgid "Friday"
+msgstr "Fredag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:537
+msgid "Saturday"
+msgstr "Lørdag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:539
+msgid "day"
+msgstr "dag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:540
+msgid "weekday"
+msgstr "ukedag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:541
+msgid "weekend day"
+msgstr "dag i weekenden"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:607
+#: app/helper/class-ai1ec-events-helper.php:624
+#: app/helper/class-ai1ec-events-helper.php:1769
+#: app/helper/class-ai1ec-settings-helper.php:258
+#: app/view/admin/box_repeat.php:2
+msgid "Daily"
+msgstr "Daglig"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:608
+#: app/helper/class-ai1ec-events-helper.php:625
+#: app/helper/class-ai1ec-events-helper.php:1781
+#: app/view/admin/box_repeat.php:3
+msgid "Weekly"
+msgstr "Ukentlig"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:609
+#: app/helper/class-ai1ec-events-helper.php:626
+#: app/helper/class-ai1ec-events-helper.php:1793
+#: app/view/admin/box_repeat.php:4
+msgid "Monthly"
+msgstr "Månedlig"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:610
+#: app/helper/class-ai1ec-events-helper.php:627
+#: app/helper/class-ai1ec-events-helper.php:1805
+#: app/view/admin/box_repeat.php:5
+msgid "Yearly"
+msgstr "Årlig"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:649
+msgid "day(s)"
+msgstr "dag(e)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:678
+msgid "week(s)"
+msgstr "uke(r)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:748
+msgid "month(s)"
+msgstr "måned(er)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:771
+msgid "year(s)"
+msgstr "år"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1453
+msgid "Never"
+msgstr "Aldri"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1454
+msgid "After"
+msgstr "Etter"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1455
+#: app/view/admin/box_repeat.php:28
+msgid "On date"
+msgstr "På datoen"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1648
+#: app/helper/class-ai1ec-events-helper.php:1657
+#: app/helper/class-ai1ec-events-helper.php:1665
+msgctxt "Recurrence editor - weekly tab"
+msgid "on"
+msgstr "på"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1653
+#: app/helper/class-ai1ec-events-helper.php:1682
+#: app/helper/class-ai1ec-events-helper.php:1720
+msgid "and"
+msgstr "og"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1678
+#: app/helper/class-ai1ec-events-helper.php:1685
+#: app/helper/class-ai1ec-events-helper.php:1691
+#: app/helper/class-ai1ec-events-helper.php:1702
+msgctxt "Recurrence editor - monthly tab"
+msgid "on"
+msgstr "på"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1678
+#: app/helper/class-ai1ec-events-helper.php:1685
+#: app/helper/class-ai1ec-events-helper.php:1691
+msgid "of the month"
+msgstr "i måneden"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1715
+#: app/helper/class-ai1ec-events-helper.php:1723
+#: app/helper/class-ai1ec-events-helper.php:1730
+msgctxt "Recurrence editor - yearly tab"
+msgid "on"
+msgstr "på"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1772
+msgid "Every other day"
+msgstr "Hver andre dag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1774
+msgid "Every %d days"
+msgstr "Hver % dag"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1784
+msgid "Every other week"
+msgstr "Hver andre uke"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1786
+msgid "Every %d weeks"
+msgstr "Hver % uke"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1796
+msgid "Every other month"
+msgstr "Hver andre måned"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1798
+msgid "Every %d months"
+msgstr "Hver % måned"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1808
+msgid "Every other year"
+msgstr "Hvert andre år"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1810
+msgid "Every %d years"
+msgstr "Hvert % år"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1830
+msgid "until %s"
+msgstr "inntil %s"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1833
+msgid "for %d occurrences"
+msgstr "i % forekomster"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1835
+msgid "forever"
+msgstr "alltid"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-events-helper.php:1932
+msgid "times"
+msgstr "ganger"
+
+#: app/helper/class-ai1ec-platform-helper.php:136
+msgid "Right Now"
+msgstr "Akkurat nå"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-platform-helper.php:152
+msgctxt "meta box"
+msgid "Calendar Tasks"
+msgstr "Kalenderoppgaver"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-platform-helper.php:171
+msgid "Content"
+msgstr "Innhold"
+
+#: app/helper/class-ai1ec-platform-helper.php:178
+msgid "Discussion"
+msgstr "Diskusjon"
+
+#: app/helper/class-ai1ec-platform-helper.php:183
+msgid "Comment"
+msgid_plural "Comments"
+msgstr[0] "Kommentar"
+msgstr[1] "Kommentarer"
+
+#: app/helper/class-ai1ec-platform-helper.php:195
+msgctxt "Right Now"
+msgid "Approved"
+msgid_plural "Approved"
+msgstr[0] "Godkjent"
+msgstr[1] "Godkjente"
+
+#: app/helper/class-ai1ec-platform-helper.php:207
+msgid "Pending"
+msgid_plural "Pending"
+msgstr[0] "Ventende"
+msgstr[1] "Ventende"
+
+#: app/helper/class-ai1ec-platform-helper.php:219
+msgctxt "comment"
+msgid "Spam"
+msgid_plural "Spam"
+msgstr[0] "Spam"
+msgstr[1] "Spam"
+
+#: app/helper/class-ai1ec-platform-helper.php:236
+msgid "Your site is asking search engines not to index its content"
+msgstr "Nettstedet ditt ber søkemotorer om ikke å indeksere innholdet"
+
+#: app/helper/class-ai1ec-platform-helper.php:237
+msgid "Search Engines Blocked"
+msgstr "Søkemotorer blokkert"
+
+#: app/helper/class-ai1ec-platform-helper.php:242
+msgid "You are using <span class=\"b\">All-in-One Event Calendar %s</span>."
+msgstr "Du bruker <span class=\"b\">All-in-One Event Calendar %s</span>."
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-platform-helper.php:305
+msgid "Site Title"
+msgstr "Sidetittel"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:85
+msgid "- Auto-Create New Page -"
+msgstr "- Opprett automatisk Ny Side -"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:106
+msgid "View \"%s\" »"
+msgstr "Vis \"%s\" »"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:225
+msgid "Default (d/m/y)"
+msgstr "Standard (d/m/å)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:228
+msgid "US (m/d/y)"
+msgstr "US (m/d/y)"
+
+#  all-in-one-event-calendar
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:231
+msgid "ISO 8601 (y-m-d)"
+msgstr "ISO 8601 (å-m-d)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:234
+msgid "Dotted (m.d.y)"
+msgstr "Punktum (m.d.å)"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:252
+msgid "Hourly"
+msgstr "Hver time"
+
+# @ all-in-one-event-calendar
+#: app/helper/class-ai1ec-settings-helper.php:255
+msgid "Twice Daily"
+msgstr "To ganger daglig"
+
+# @ all-in-one-event-calendar
+#: app/model/class-ai1ec-event.php:566
+#: themes-ai1ec/vortex/agenda.php:71
+msgid " (all-day)"
+msgstr "hele dagen"
+
+# @ all-in-one-event-calendar
+#: app/model/class-ai1ec-settings.php:424
+msgid "Month"
+msgstr "Måned"
+
+# @ all-in-one-event-calendar
+#: app/model/class-ai1ec-settings.php:425
+msgid "Week"
+msgstr "Uke"
+
+# @ all-in-one-event-calendar
+#: app/model/class-ai1ec-settings.php:426
+msgid "Day"
+msgstr "Dag"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:374
+msgid "Something went wrong when deleting the option"
+msgstr "Noe gikk galt under slettingen av altenativet"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:424
+msgid "You unsubscribed from %s. "
+msgstr "Du har meldt deg av fra %s."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:426
+msgid "%d event was deleted"
+msgid_plural "%d events were deleted."
+msgstr[0] "%d hendelse slettet."
+msgstr[1] "%d hendelser slettet."
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:509
+msgid "All-in-One Event Calendar Facebook Import Notice"
+msgstr "All-in-One Event Calendar importmelding"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:510
+msgid "Something went wrong while syncing events from Facebook. Please check that your Access Token is still valid by visiting the <strong>Events</strong> &gt; <strong>Calendar Feeds</strong> screen."
+msgstr "Noe gikk galt me synkronisering av hendelser fra Facebook. Vennligst sjekk at din \"Access Token\" fremdeles er gyldig ved å besøke <strong>Hendelser</strong &gt; <strong>Kalenderabonnement</strong>-skjermen."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:592
+msgid "Something went wrong with Facebook authentication, try to log out and then login again"
+msgstr "Noe gikk galt med Facebookautentiseringen, prøv å logge ut og inn igjen."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:595
+msgid "Something went wrong when retrieving data from Facebook. Try subscribing to fewer users or try logging off and logging in again."
+msgstr "Noe gikk galt under henting av data fra Facebook. Prøv å abonnere på færre brukere eller prøv å logge av og på igjen."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:850
+msgid "Fetching data for %s has completed succesfully"
+msgstr "Henting av data for %s komplett."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:976
+msgid "Something went wrong with Facebook authentication. Try to log out and then log in again."
+msgstr "Noe gikk galt med Facebookautentiseringen, prøv å logge ut og inn igjen."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:980
+msgid "Something went wrong when retrieving data from Facebook. Try subscribing to fewer calendars."
+msgstr "Noe gikk galt under henting av data fra Facebook. Prøv å abonnere på færre kalendere,"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1030
+msgid "Linked Facebook event"
+msgstr "Linket Facebookhendelse"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1033
+msgid "Would you like to delete the linked Facebook event or keep it? If you choose to keep it and later you export this event again, a new one will be created."
+msgstr "Ønsker du å slette Facebookhendelsen eller beholde den? Hvis du velger å beholde den og senere eksporterer hendelsen igjen vil en ny bli opprettet."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1034
+msgid "Unpublish Facebook event?"
+msgstr "Avpubliser Facebookhendelse?"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1036
+msgid "Delete event"
+msgstr "Slett hendelse"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1037
+msgid "Keep event"
+msgstr "Behold hendelse"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1040
+msgid "Export event to Facebook?"
+msgstr "Eksporter hendelse til Facebook?"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1079
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1144
+msgid "All-in-One Event Calendar Facebook Import Error"
+msgstr "All-in-One Event Calendar Facebook importmelding"
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1080
+msgid "We couldn't synchronize data with Facebook as we don't have a valid access token. Try to log out of Facebook from the <strong>Events</strong> &gt; <strong>Calendar Feeds</strong> screen, then log in again."
+msgstr "Vi kunne ikke synkronisere data med Facebook ettersom vi ikke har en gyldig \"access token\". Prøv å logge ut fra Facebook fra <strong>Hendelser</strong> &gt; <strong>Kalenderfeed</strong>-skjermen og logg så inn igjen."
+
+#: app/plugins/Ai1ecFacebookConnectorPlugin.php:1145
+msgid "We couldn't delete data from Facebook as we don't have a valid access token. Try to log out of Facebook from the <strong>Events</strong> &gt; <strong>Calendar Feeds</strong> screen, then log in again."
+msgstr "Vi kunne ikke slette data fra Facebook ettersom vi ikke har en gyldig \"access token\". Prøv å logge ut fra Facebook fra <strong>Hendelser</strong> &gt; <strong>Kalenderfeed</strong>-skjermen og logg så inn igjen."
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:264
+msgid "Deleted %d events"
+msgstr "% Hendelser slettet"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:270
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:315
+msgid "Invalid ICS feed ID"
+msgstr "Ugyldig ICS feed-ID"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:304
+msgid "No events were found"
+msgstr "Ingen Hendelse funnet"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:309
+msgid "Imported %s event"
+msgid_plural "Imported %s events"
+msgstr[0] "% Hendelse importert"
+msgstr[1] "% Hendelser importert"
+
+# @ all-in-one-event-calendar
+#: app/plugins/Ai1ecIcsConnectorPlugin.php:343
+msgid "Feed deleted"
+msgstr "Slettet feed"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:27
+msgid "Show all events"
+msgstr "Vis alle hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:28
+msgid "Show only events imported from Facebook"
+msgstr "Bare vis hendelser importert fra Facebook."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:29
+msgid "Show only events exported to Facebook"
+msgstr "Vis bare hendelser eksportert til Facebook."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:30
+msgid "Show only events that can be exported to Facebook"
+msgstr "Vis bare hendelser som kan eksporteres til Facebook."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:115
+msgid "All-in-One Event Calendar Facebook Export Error"
+msgstr "All-in-One Event Calendar Facebook eksportfeil"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-custom-bulk-action.php:116
+msgid "We couldn't export data to Facebook as we don't have a valid access token. Try to log out of Facebook from the <strong>Events</strong> &gt; <strong>Calendar Feeds</strong> screen, then log in again."
+msgstr "Vi kunne ikke eksportere data til Facebook ettersom vi ikke har en gyldig \"access token\". Prøv å logge ut fra Facebook fra <strong>Hendelser</strong> &gt; <strong>Kalenderfeed</strong>-skjermen og logg så inn igjen."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:441
+msgid "All-in-One Event Calendar Facebook Event Creation Error"
+msgstr "All-in-One Event Calendar Facebook feil med hendelsesopprettelse"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:442
+msgid "Something went wrong while creating the event on Facebook."
+msgstr "Noe gikk galt i løpet av opprettelsen hendelsen på Facebook."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:446
+msgid "You didn't enter a valid date. Remember that only events which end in the future can be exported to Facebook."
+msgstr "Du har ikke fylt ut en gyldig dato. Husk at bare hendelser som slutter i fremtiden kan eksporteres til Facebook."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:465
+msgid "All-in-One Event Calendar Facebook Event Update Error"
+msgstr "All-in-One Event Calendar Facebook feil med hendelsesoppdatering"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:466
+msgid "Something went wrong while updating the event on Facebook."
+msgstr "Noe gikk galt under oppdatering av hendelsen på Facebook."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:489
+msgid "All-in-One Event Calendar Facebook Event Deletion Error"
+msgstr "All-in-One Event Calendar Facebook feil med hendelsessletting"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-event.php:490
+msgid "Something went wrong while deleting the event from Facebook."
+msgstr "Noe gikk galt under sletting av hendelsen på Facebook."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-graph-object-collection.php:134
+msgid "Friends"
+msgstr "Venner"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-graph-object-collection.php:136
+msgid "Pages"
+msgstr "Sider"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-graph-object-collection.php:138
+msgid "Groups"
+msgstr "Grupper"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-graph-object-collection.php:337
+msgid "An error message occurred when saving %s data to the db"
+msgstr "En feilmelding oppsto under lagring av %s-data til databasen."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:34
+msgid "How do I use Facebook import?"
+msgstr "Hvordan bruker jeg Facebookimport?"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:58
+msgid "Nothing to display"
+msgstr "Ingenting å vise"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:104
+msgid "Save"
+msgstr "Lagre"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:105
+msgid "Facebook Configuration"
+msgstr "Facebook konfgurering"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:202
+msgid "Syncing events for %s."
+msgstr "Synkroniserer hendelser for %s."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:203
+msgid "Something went wrong while updating events, but some events might still be updated / inserted correctly"
+msgstr "Noe gikk galt under oppdatering av hendelser, men noen hendelser kan kanskje fremdeles oppdateres/legges inn korrekt."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:204
+msgid " %d event was updated."
+msgid_plural " %d events were updated."
+msgstr[0] "%d hendelse oppdatert."
+msgstr[1] "%d hendelser oppdatert."
+
+# @ default
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:205
+msgid " %d event was added."
+msgid_plural " %d events were added."
+msgstr[0] "%d hendelse lagret."
+msgstr[1] "%d hendelser lagret."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:206
+msgid " %d event was deleted."
+msgid_plural " %d events were deleted."
+msgstr[0] "%d hendelse slettet."
+msgstr[1] "%d hendelser slettet."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:208
+msgid " No events to add or update."
+msgstr "Ingen Hendelser å legge til eller oppdatere"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:232
+msgid "Event category: "
+msgstr "Hendelseskategori:"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:236
+msgid "Tag with: "
+msgstr "Velg stikkord:"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:265
+msgid "Refresh these events"
+msgstr "Oppdater hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:266
+msgid "Unsubscribe from these events"
+msgstr "Stopp abonnement for disse hendelsene."
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:328
+msgid "Profile image"
+msgstr "Profilbilde"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:329
+msgid "Hi, you are logged in as:"
+msgstr "Hei, du er logget inn som:"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:332
+msgid " Refresh"
+msgstr "Oppdater"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:333
+msgid " Unsubscribe"
+msgstr "Fjern abonnement"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:334
+msgid "Refresh my events"
+msgstr "oppdater mine hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:335
+msgid "Unsubscribe from my events"
+msgstr "Stopp abonnement for mine hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:373
+msgid "Log out from Facebook"
+msgstr "Logg ut fra Facebook"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:374
+msgid "Subscribe to your events"
+msgstr "Abonner på dine hendelser"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:406
+msgid "Choose a category"
+msgstr "Velg en kategori"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:425
+#: app/view/admin/plugins/ics/display_feeds.php:21
+msgid "Event category"
+msgstr "Hendelseskategori"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:426
+#: app/view/admin/feed_row.php:15
+#: app/view/admin/plugins/ics/display_feeds.php:27
+msgid "Tag with"
+msgstr "Velg stikkord"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:427
+msgid "Refresh list"
+msgstr "Oppdater liste"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:428
+msgid "Subscribe to more events"
+msgstr "Abonner på flere hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:430
+msgid "You can subscribe to the shared calendars of friends, pages, and groups you are connected with. Select those calendars you're interested in below."
+msgstr "Du kan abonnere på delte kalendere fra venner, sider og grupper du har en kontakt med. Velg kalenderene du ønsker under."
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:451
+msgid "Subscribe to selected"
+msgstr "Abonner på valgte"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:496
+#: app/view/admin/plugins/ics/display_feeds.php:45
+msgid "Keep Events"
+msgstr "Behold hendelser"
+
+# @ all-in-one-event-calendar
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:497
+#: app/view/admin/plugins/ics/display_feeds.php:44
+msgid "Remove Events"
+msgstr "Fjern hendelser"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:498
+msgid "Would you like to remove these events from your calendar, or preserve them?"
+msgstr "Ønsker du å fjerne disse hendelsene fra kalenderen eller beholde dem?"
+
+#: app/plugins/inc/facebook/class-ai1ec-facebook-tab.php:499
+msgid "Removing the following subscription: "
+msgstr "Fjerner følgende abonnement:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:2
+msgid "Title:"
+msgstr "Tittel:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:6
+msgid "Number of events to show:"
+msgstr "Antal viste Hendelser:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:14
+msgid "Events with these <strong>Categories</strong>"
+msgstr "Hendelser med disse <strong>Kategoriene</strong>"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:23
+msgid "No categories found."
+msgstr "Ingen kategorier funnet."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:30
+msgid "<strong>Or</strong> events with these <strong>Tags</strong>"
+msgstr "<strong>eller</strong>Hendelse med disse <strong>Stikkordene</strong>"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:39
+msgid "No tags found."
+msgstr "Ingen stikkord funnet."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:46
+msgid "<strong>Or</strong> any of these <strong>Events</strong>"
+msgstr "<strong>eller</strong> en av disse <strong>Hendelsene</strong>"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:55
+msgid "No events found."
+msgstr "Ingen Hendelser funnet."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:62
+msgid "Show <strong>View Calendar</strong> button"
+msgstr "Vis <strong>Vis kalender</strong> knappen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:65
+msgid "Show <strong>Subscribe</strong> buttons"
+msgstr "Vis <strong>Abonner</strong> knapper"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/agenda-widget-form.php:68
+msgid "Hide this widget on calendar page"
+msgstr "Skjul denne widget på kalendersiden"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_advanced_settings.php:3
+msgid "Contain calendar in this DOM element:"
+msgstr "Inneholder kalendrer i dette DOM-element:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_advanced_settings.php:5
+msgid "Optional. Provide a <a href=\"http://api.jquery.com/category/selectors/\" target=\"_blank\">jQuery selector</a> that evaluates to a single DOM element. Replaces any existing markup found within target. If left empty, calendar is shown in normal page content container."
+msgstr "Valgfritt. Provide a <a href=\"http://api.jquery.com/category/selectors/\" target=\"_blank\">jQuery selector</a> that evaluates to a single DOM element. Replaces any existing markup found within target. If left empty, calendar is shown in normal page content container."
+
+#: app/view/admin/box_advanced_settings.php:12
+msgid "Turn this blog into an <strong>events-only platform</strong>"
+msgstr "Forandre denne bloggen til en ren <strong>hendelsesplatform</strong>"
+
+#: app/view/admin/box_advanced_settings.php:14
+msgid "To deactivate event platform mode, set <code>AI1EC_EVENT_PLATFORM</code> in <code>all-in-one-event-calendar.php</code> to <code>FALSE</code>."
+msgstr "For å deaktivere hendelsesplatformmodus, sett <code>AI1EC_EVENT_PLATFORM</code> i <code>all-in-one-event-calendar.php</code> til <code>FALSE</code>."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_advanced_settings.php:21
+msgid "<strong>Strict</strong> event platform mode"
+msgstr "<strong>Ren </strong> hendelsplatformmodus"
+
+#: app/view/admin/box_advanced_settings.php:22
+msgid "Prevents plugins from adding menu items unrelated to calendar/media/user management"
+msgstr "Forhindrer innstikk i å legge til menyelementer som ikke er kalender/media/brukerstyring."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_contact.php:1
+msgid "Organizer contact info"
+msgstr "Arrangørens kontaktinformation"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_contact.php:7
+msgid "Contact name:"
+msgstr "Navn på kontakt:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_contact.php:17
+msgid "Phone:"
+msgstr "Telefon:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_contact.php:27
+msgid "E-mail:"
+msgstr "E-mail:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_cost.php:1
+msgid "Event cost"
+msgstr "Pris"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_cost.php:7
+msgid "Cost"
+msgstr "Pris"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_location.php:1
+msgid "Event location details"
+msgstr "Detaljer om stedet"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_location.php:8
+msgid "Venue name:"
+msgstr "Stedsnavn:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_location.php:18
+msgid "Address:"
+msgstr "Adresse:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_event_location.php:28
+msgid "Show Google Map:"
+msgstr "Vis Google kart:"
+
+#: app/view/admin/box_event_location.php:38
+msgid "Input Coordinates:"
+msgstr "Registrer koordinater:"
+
+#: app/view/admin/box_event_location.php:52
+msgid "Longitude:"
+msgstr "Lengdegrad:"
+
+#: app/view/admin/box_event_location.php:62
+msgid "Latitude:"
+msgstr "Breddegrad"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:1
+msgid "Eventbrite Ticketing"
+msgstr "Eventbrite billettsystem"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:7
+msgid "Register this event with Eventbrite.com?"
+msgstr "Registrer denne Hendelsen på Eventbrite.com?"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:12
+msgid "Yes"
+msgstr "Ja"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:14
+msgid "No"
+msgstr "Nei"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:22
+msgid "Set up your first ticket"
+msgstr "Opprett din første billett"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:24
+msgid "To create multiple tickets per event, submit this form, then follow the link to Eventbrite."
+msgstr "For å opprette flere billetter pr. Hendelse, send inn dette formularet og følg deretter linken til Eventbrite."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:32
+msgid "Name"
+msgstr "Navn"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:42
+#: app/view/admin/themes.php:119
+msgid "Description"
+msgstr "Beskrivelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:53
+msgid "Type"
+msgstr "Type"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:58
+msgid "Set Price"
+msgstr "Angi prisen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:60
+msgid "Donation Based"
+msgstr "Baseret på donasjoner"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:68
+msgid "The price for this event's first ticket will be taken from the Cost field above."
+msgstr "Prisen for denne Hendelsens første billett tas fra Pris-feltet ovenfor"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:75
+msgid "Quantity"
+msgstr "Antall"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:85
+msgid "Include Fee in Price"
+msgstr "Innkluder gebyret i prisen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:90
+msgid "Add Service Fee on top of price"
+msgstr "Legg servicegebyr til på toppen av prisen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:92
+msgid "Include Service fee in price"
+msgstr "Innkluder servicegebyr i prisen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:98
+msgid "Payment Options"
+msgstr "Betalingsmuligheter"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:103
+msgid "Paypal"
+msgstr "Paypal"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:105
+msgid "Google Checkout"
+msgstr "Google Checkout"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:107
+msgid "Check"
+msgstr "Sjekk"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:109
+msgid "Cash"
+msgstr "Kontant"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_eventbrite.php:111
+msgid "Send an Invoice"
+msgstr "Send en kvittering"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:3
+msgid "Viewing Events"
+msgstr "Se Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:5
+msgid "Calendar page:"
+msgstr "Kalenderside:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:10
+msgid "Timezone:"
+msgstr "Tidssone:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:15
+msgid "Week starts on"
+msgstr "Uken begynner med"
+
+#: app/view/admin/box_general_settings.php:20
+msgid "Available Views:"
+msgstr "Tilgjengelige visninger:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:24
+msgid "Posterboard pages show at most"
+msgstr "Oppslagstavlesider viser høyest"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:25
+#: app/view/admin/box_general_settings.php:29
+msgid "events"
+msgstr "hendelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:28
+msgid "Agenda pages show at most"
+msgstr "Listesider viser høyest"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:34
+msgid "Keep all events <strong>expanded</strong> in the agenda view"
+msgstr "Behold alle Hendelser <strong>utvidet</strong> i listevisning"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:40
+msgid "<strong>Show year</strong> in agenda date labels"
+msgstr "<strong>Vis år</strong> i listedatomerker"
+
+#: app/view/admin/box_general_settings.php:46
+msgid "<strong>Show location in event titles</strong> in calendar views"
+msgstr "<strong>Vis stedsnavn i hendelsestitler</strong> i kalendervisning."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:52
+msgid "<strong>Exclude</strong> events from search results"
+msgstr "<strong>Utelat</strong> Hendelse fra søkeresultater"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:58
+msgid "Show <strong>Post Your Event</strong> button above the calendar to privileged users"
+msgstr "Vis <strong>Innsend din Hendelse</strong> knappen over kalenderen for godkjente brukere"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:64
+msgid "Hide <strong>Subscribe</strong>/<strong>Add to Calendar</strong> buttons in calendar and single event views"
+msgstr "Skjul <strong>Abonner</strong>/<strong>Legg til i kalender</strong> knapper i kalender- og enkelthendelsesvisning"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:70
+msgid "Hide <strong>Google Maps</strong> until clicked"
+msgstr "Skjul <strong>Google Maps</strong> inntil det klikkes"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:76
+msgid "Include <strong>event categories</strong> in post category lists"
+msgstr "Inkluder <strong>Hendelsekategorier</strong> i indleggskategori listen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:80
+msgid "Adding/Editing Events"
+msgstr "Legger til/redigerer Hendelser"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:82
+msgid "Input dates in this format:"
+msgstr "Legg til datoer i dette format:"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:88
+msgid "Use <strong>24h time</strong> in time pickers"
+msgstr "Benytt <strong>24 timer</strong> tidsformat"
+
+#: app/view/admin/box_general_settings.php:94
+msgid "<strong>Disable address autocomplete</strong> function"
+msgstr "<strong>Deaktiver adresseautofullfør</strong>funksjonen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:100
+msgid "Use the configured <strong>region</strong> (WordPress locale) to bias the address autocomplete function"
+msgstr "Benytt <strong>regionale</strong> konfigurationsinnstillinger (WordPress lokalisering) til å sette opp adresseopplysninger med funksjonen autofullførelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_general_settings.php:106
+msgid "Display <strong>Publish</strong> at bottom of Edit Event form"
+msgstr "Vis <strong>Publiser</strong> under Rediger Hendelse formularet"
+
+#: app/view/admin/box_general_settings.php:110
+msgid "Sharing Data"
+msgstr "Deler data"
+
+#: app/view/admin/box_general_settings.php:114
+msgid "Allow Timely to collect calendar statistics"
+msgstr "Lar Timely samle kalenderstatistikk."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_repeat.php:14
+msgid "End"
+msgstr "Slutt"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_repeat.php:21
+msgid "Ending after"
+msgstr "Slutter etter"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_repeat.php:36
+msgid "Apply"
+msgstr "Bruk"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_repeat.php:37
+msgid "Cancel"
+msgstr "Avslutt"
+
+#: app/view/admin/box_support.php:3
+msgid "Timely"
+msgstr "Timely"
+
+#: app/view/admin/box_support.php:7
+msgid "Timely’s All-in-One Event Calendar is a revolutionary new way to find and share events."
+msgstr "Timelys All-in-One Event Calendar er en revolusjonerende ny måte å finne og dele hendelser."
+
+#: app/view/admin/box_support.php:16
+msgid "Follow @_Timely"
+msgstr "Følg @_Timely"
+
+#: app/view/admin/box_support.php:22
+msgid "Timely is dedicated to creating the best calendar software in the world."
+msgstr "Timely er opptatt av å skape den beste kalenderprogramvaren i verden."
+
+#: app/view/admin/box_support.php:26
+msgid "Please let us know if anything is not working the way you expect. While many problems are caused by conflicts with other plugins, most problems can be solved quickly.  Visit our <a href=\"http://help.time.ly/\" target=\"_blank\">Help Desk</a> to report bugs, request features, or learn how to get the most out of this plugin."
+msgstr "Vennligst gi beskjed hvis noe ikke fungerer som forventet. Selv om flere problemer ofte er et resultat av konfliker med andre innslikk kan de fleste problemene løses kjapt. Besøk <a href=\"http://help.time.ly/\" target=\"_blank\">Help desken</a> vår for å rapportere bugs, be om nye funksjoner eller for å lære om hvordan få mest ut av innstikket."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_support.php:30
+msgid "Get Support"
+msgstr "Få support"
+
+#: app/view/admin/box_support.php:35
+msgid "Timely News"
+msgstr "Timely-nyheter"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_support.php:35
+msgid "view all news »"
+msgstr "Vis alle nyheter &rarr;"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:2
+msgid "Event date and time"
+msgstr "Dato og tid for Hendelsen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:8
+msgid "All-day event"
+msgstr "Heldagshendelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:18
+msgid "Start date / time"
+msgstr "Start dato/tid"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:31
+msgid "End date / time"
+msgstr "Slutt dato/tid"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:46
+msgid "Repeat"
+msgstr "Gjenta"
+
+#: app/view/admin/box_time_and_date.php:60
+msgid "Exclude"
+msgstr "Ekskluder"
+
+#: app/view/admin/box_time_and_date.php:67
+msgid "Choose a rule for exclusion"
+msgstr "Velg en regel for ekskludering"
+
+#: app/view/admin/box_time_and_date.php:73
+msgid "Exclude dates"
+msgstr "Ekskluder datoer"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/box_time_and_date.php:80
+msgid "Select date range"
+msgstr "Velg datointervall"
+
+#: app/view/admin/box_time_and_date.php:85
+msgid "Choose specific dates to exclude"
+msgstr "Velg spesifikke datoer å ekskludere."
+
+#: app/view/admin/calendar_tasks.php:3
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: app/view/admin/calendar_tasks.php:4
+msgid "to the All-in-One Event Calendar by <a href=\"http://time.ly/\" target=\"_blank\">Timely</a>"
+msgstr "til All-in-One Event Calendar av <a href=\"http://time.ly/\" target=\"_blank\">Timely</a>"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:13
+#: themes-ai1ec/vortex/calendar.php:29
+msgid "Post Your Event"
+msgstr "Publiser Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:16
+msgid "Add a new event to the calendar."
+msgstr "Legg til ny hendelse til kalenderen."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:24
+msgid "Manage Events"
+msgstr "Administrer hendelser"
+
+#: app/view/admin/calendar_tasks.php:27
+msgid "View and edit all your events."
+msgstr "Vis og rediger alle hendelser."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:39
+msgid "Manage Event Categories"
+msgstr "Administrer hendelseskategorier"
+
+#: app/view/admin/calendar_tasks.php:42
+msgid "Organize and color-code your events."
+msgstr "Organiser og fargekod hendelser."
+
+#: app/view/admin/calendar_tasks.php:50
+msgid "Choose Your Theme"
+msgstr "Velg tema"
+
+#: app/view/admin/calendar_tasks.php:53
+msgid "Change the look and feel."
+msgstr "Forandre utseende."
+
+#: app/view/admin/calendar_tasks.php:63
+msgid "Manage Calendar Feeds"
+msgstr "Administrer kalenderabonnement"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:66
+msgid "Subscribe to other calendars."
+msgstr "Abonner på andre kalendre"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/calendar_tasks.php:74
+msgid "Edit Calendar Settings"
+msgstr "Rediger kalenderinnstillinger"
+
+#: app/view/admin/calendar_tasks.php:77
+msgid "Make this calendar your own."
+msgstr "Gjør denne kalenderen din egen."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/class-ai1ec-agenda-widget.php:15
+#: app/view/admin/class-ai1ec-agenda-widget.php:36
+msgid "Upcoming Events"
+msgstr "Kommende Hendelse"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/class-ai1ec-agenda-widget.php:17
+msgid "All-in-One Event Calendar: Lists upcoming events in Agenda view"
+msgstr "All-in-One Event Calendar: List opp kommende Hendelser i listeform"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/event_categories-color_picker.php:5
+#: app/view/admin/event_categories-color_picker.php:19
+msgid "Category Color"
+msgstr "Kategorifarge"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/event_categories-color_picker.php:13
+#: app/view/admin/event_categories-color_picker.php:25
+msgid "Events in this category will be identified by this color"
+msgstr "Hendelse i denne kategorien kjennes på denne fargen"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/feed_row.php:3
+#: app/view/admin/plugins/ics/display_feeds.php:17
+msgid "iCalendar/.ics Feed URL:"
+msgstr "iCalendar/.ics Feed webadresse(URL):"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/feed_row.php:9
+msgid "Event category:"
+msgstr "Hendelseskategori:"
+
+#: app/view/admin/feed_row.php:19
+msgid "× Remove"
+msgstr "× Fjern"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/feed_row.php:20
+msgid "Refresh"
+msgstr "Oppdater"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/import.php:6
+msgid "Successfully imported events:"
+msgstr "Importerete Hendelser:"
+
+#: app/view/admin/plugins/facebook/user_login.php:2
+msgid "Click below to connect your calendar to Facebook."
+msgstr "Klikk under for å koble kalenderen din til Facebook."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/plugins/facebook/user_login.php:5
+msgid "Connect to Facebook"
+msgstr "Koble til Facebook"
+
+#: app/view/admin/plugins/ics/display_feeds.php:2
+msgid ""
+"Configure which other calendars your own calendar subscribes to.\n"
+"    You can add any calendar that provides an iCalendar (.ics) feed.\n"
+"    Enter the feed URL(s) below and the events from those feeds will be\n"
+"    imported periodically."
+msgstr ""
+"Konfigurer hvilke andre kalendere din kalander abonnerer på.\n"
+"   Du kan legge til enhver kalender men en iCalendar (.ics) feed. \n"
+"   Fyll inn feed-URLen(e) under og hendelsene fra dem vil bli \n"
+"   importert periodevis."
+
+#: app/view/admin/plugins/ics/display_feeds.php:11
+msgid "Check for new events"
+msgstr "Se etter nye hendelser"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/plugins/ics/display_feeds.php:31
+msgid "+ Add new subscription"
+msgstr "+ Nytt abonnement"
+
+#: app/view/admin/plugins/ics/display_feeds.php:38
+msgid "Removing ICS Feed"
+msgstr "Fjerner ICS-feed"
+
+#: app/view/admin/plugins/ics/display_feeds.php:41
+msgid "Do you want to keep the events imported from the calendar or remove them?"
+msgstr "Ønsker du å beholde de importerte hendelsene eller fjerne dem?"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/plugins/ics/display_feeds.php:49
+#: app/view/admin/settings.php:19
+msgid "Update Settings"
+msgstr "Oppdater innstillinger"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/row_daily.php:3
+#: app/view/admin/row_monthly.php:3
+#: app/view/admin/row_monthly.php:22
+#: app/view/admin/row_weekly.php:3
+#: app/view/admin/row_yearly.php:3
+msgid "Every"
+msgstr "Hver"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/row_monthly.php:9
+msgid "On day of the month"
+msgstr "På dag i måneden"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/row_monthly.php:13
+msgid "On day of the week"
+msgstr "På dag i uken"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/row_weekly.php:6
+msgctxt "Recurrence editor - weekly tab"
+msgid "On"
+msgstr "På"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/row_yearly.php:7
+msgctxt "Recurrence editor - yearly tab"
+msgid "In"
+msgstr "I"
+
+#: app/view/admin/themes-install.php:4
+msgid "The active theme is broken.  Reverting to the default theme."
+msgstr "Det aktive temaet er ødelagt. Tilbakefører til standardtemaet."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes-install.php:22
+#: app/view/admin/themes.php:4
+msgid "New theme activated. <a href=\"%s\">Visit site</a>"
+msgstr "Nytt tema aktivert. <a href=\"%s\">Vis nettsted</a>"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes-install.php:28
+#: app/view/admin/themes.php:10
+msgid "Theme deleted."
+msgstr "Slettet tema."
+
+#: app/view/admin/themes-install.php:39
+#: app/view/admin/themes-install.php:46
+#: app/view/admin/themes.php:17
+msgid "Manage Themes"
+msgstr "Administrer tema"
+
+#: app/view/admin/themes-install.php:42
+msgctxt "theme"
+msgid "Install Themes"
+msgstr "Installer tema"
+
+#: app/view/admin/themes-updated.php:16
+msgid "Whenever core files are updated, please be sure to reload your web browser to make sure the most recent versions of the files are used."
+msgstr "Hver gang grunnfilene oppdateres, vennligst reload nettleseren for å være sikker på at siste filversjon brukes."
+
+#: app/view/admin/themes.php:18
+msgid "Current Theme"
+msgstr "Nåværende tema"
+
+#: app/view/admin/themes.php:21
+msgid "Current theme preview"
+msgstr "Forhåndsvisning av nåværende tema."
+
+#. translators: 1: theme title, 2: theme version, 3: theme author
+#: app/view/admin/themes.php:25
+#: lib/class-ai1ec-themes-list-table.php:323
+msgid "%1$s %2$s by %3$s"
+msgstr "%1$s %2$s av %3$s"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:29
+#: lib/class-ai1ec-themes-list-table.php:356
+#: themes-ai1ec/vortex/agenda.php:109
+#: themes-ai1ec/vortex/event-multi.php:51
+#: themes-ai1ec/vortex/event-single.php:64
+#: themes-ai1ec/vortex/posterboard.php:75
+msgid "Tags:"
+msgstr "Stikkord:"
+
+#: app/view/admin/themes.php:45
+msgid "Available Themes"
+msgstr "Tilgjengelige tema"
+
+#: app/view/admin/themes.php:52
+#: app/view/admin/themes.php:54
+msgid "Search Installed Themes"
+msgstr "Søk blant installerte tema"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:55
+msgid "Feature Filter"
+msgstr "Funksjonsfilter"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:63
+msgid "Theme filters"
+msgstr "Temafiltre"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:89
+msgid "Apply Filters"
+msgstr "Bruk filtre"
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:91
+msgid "Close filters"
+msgstr "Lukk filtre"
+
+#: app/view/admin/themes.php:113
+msgid "Broken Themes"
+msgstr "Ødelagte tema"
+
+#: app/view/admin/themes.php:114
+msgid "The following themes are installed but incomplete. Themes must have a stylesheet and a template."
+msgstr "Følgende tema er installert, men ukomplette. Et tema må ha en CSS-fil og et templat."
+
+# @ all-in-one-event-calendar
+#: app/view/admin/themes.php:118
+msgctxt "theme name"
+msgid "Name"
+msgstr "Navn"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:188
+msgid "No themes found."
+msgstr "Ingen tema funnet."
+
+#: lib/class-ai1ec-themes-list-table.php:194
+msgid "You only have one theme enabled for this site right now. Visit the Network Admin to <a href=\"%1$s\">enable</a> or <a href=\"%2$s\">install</a> more themes."
+msgstr "Du har bare ett tema aktivert for denne siden nå. Besøk Netverksadmin for å <a href=\"%1$s\">aktivere</a> eller <a href=\"%2$s\">installere</a> flere tema."
+
+#: lib/class-ai1ec-themes-list-table.php:200
+msgid "You only have one theme enabled for this site right now. Visit the Network Admin to <a href=\"%1$s\">enable</a> more themes."
+msgstr "Du har bare ett tema aktivert for denne siden nå. Besøk Netverksadmin for å <a href=\"%1$s\">aktivere</a> flere tema."
+
+#: lib/class-ai1ec-themes-list-table.php:216
+msgid "Only the active theme is available to you. Contact the <em>%s</em> administrator to add more themes."
+msgstr "Bare det aktive temaet er tilgjengelig. Kontakt <em>%s</em> administratoren for å legge til flere tema."
+
+#: lib/class-ai1ec-themes-list-table.php:277
+msgid "Preview of &#8220;%s&#8221;"
+msgstr "Forhåndsvisning av &#8220;%s&#8221;"
+
+#: lib/class-ai1ec-themes-list-table.php:288
+msgid "Activate &#8220;%s&#8221;"
+msgstr "Aktiver &#8220;%s&#8221;"
+
+#: lib/class-ai1ec-themes-list-table.php:291
+msgid "Activate"
+msgstr "Aktiver"
+
+#: lib/class-ai1ec-themes-list-table.php:293
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Forhåndsvis &#8220;%s&#8221;"
+
+#: lib/class-ai1ec-themes-list-table.php:294
+msgid "Preview"
+msgstr "Forhåndsvis"
+
+#: lib/class-ai1ec-themes-list-table.php:305
+msgid ""
+"You are about to delete this theme '%s'\n"
+"  'Cancel' to stop, 'OK' to delete."
+msgstr ""
+"Du holder på å slette %s-temaet\n"
+"  \"Avbryt\" for å stope, \"OK\" for å slette."
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:308
+msgid "Delete"
+msgstr "Slett"
+
+#: lib/class-ai1ec-themes-list-table.php:346
+msgid "All of this theme&#8217;s files are located in <code>%2$s</code>."
+msgstr "Alle filene til dette temaet finnes i <code>%2$s</code>."
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:494
+msgid "Colors"
+msgstr "Farger"
+
+#: lib/class-ai1ec-themes-list-table.php:495
+msgid "Black"
+msgstr "Svart"
+
+#: lib/class-ai1ec-themes-list-table.php:496
+msgid "Blue"
+msgstr "Blå"
+
+#: lib/class-ai1ec-themes-list-table.php:497
+msgid "Brown"
+msgstr "Brun"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:498
+msgid "Gray"
+msgstr "Grå"
+
+#: lib/class-ai1ec-themes-list-table.php:499
+msgid "Green"
+msgstr "Grønn"
+
+#: lib/class-ai1ec-themes-list-table.php:500
+msgid "Orange"
+msgstr "Oransje"
+
+#: lib/class-ai1ec-themes-list-table.php:501
+msgid "Pink"
+msgstr "Rosa"
+
+#: lib/class-ai1ec-themes-list-table.php:502
+msgid "Purple"
+msgstr "Lilla"
+
+#: lib/class-ai1ec-themes-list-table.php:503
+msgid "Red"
+msgstr "Rød"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:504
+msgid "Silver"
+msgstr "Sølv"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:505
+msgid "Tan"
+msgstr "Solbrun"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:506
+msgid "White"
+msgstr "Hvit"
+
+#: lib/class-ai1ec-themes-list-table.php:507
+msgid "Yellow"
+msgstr "Gul"
+
+#: lib/class-ai1ec-themes-list-table.php:508
+msgid "Dark"
+msgstr "Mørk"
+
+#: lib/class-ai1ec-themes-list-table.php:509
+msgid "Light "
+msgstr "Lys"
+
+#: lib/class-ai1ec-themes-list-table.php:512
+msgid "Width"
+msgstr "Bredde"
+
+#: lib/class-ai1ec-themes-list-table.php:513
+msgid "Fixed Width"
+msgstr "Fast bredde"
+
+#: lib/class-ai1ec-themes-list-table.php:514
+msgid "Flexible Width"
+msgstr "Fleksibel bredde"
+
+#: lib/class-ai1ec-themes-list-table.php:517
+msgid "Features"
+msgstr "Funksjoner"
+
+#: lib/class-ai1ec-themes-list-table.php:518
+msgid "Featured Images"
+msgstr "Fremhevde bilder"
+
+#: lib/class-ai1ec-themes-list-table.php:519
+msgid "Front Page Posting"
+msgstr "Forsidepublisering"
+
+#: lib/class-ai1ec-themes-list-table.php:520
+msgid "Full Width Template"
+msgstr "Fullbreddetemplat"
+
+#: lib/class-ai1ec-themes-list-table.php:521
+msgid "RTL Language Support"
+msgstr "RTL-språkstøtte"
+
+#: lib/class-ai1ec-themes-list-table.php:522
+msgid "Threaded Comments"
+msgstr "Trådet kommentarer"
+
+#: lib/class-ai1ec-themes-list-table.php:523
+msgid "Translation Ready"
+msgstr "Klar for oversettelser"
+
+#: lib/class-ai1ec-themes-list-table.php:526
+msgid "Subject"
+msgstr "Emne"
+
+# @ all-in-one-event-calendar
+#: lib/class-ai1ec-themes-list-table.php:527
+msgid "Holiday"
+msgstr "Helligdag"
+
+#: lib/class-ai1ec-themes-list-table.php:528
+msgid "Photoblogging"
+msgstr "Fotoblogging"
+
+#: lib/class-ai1ec-themes-list-table.php:529
+msgid "Seasonal"
+msgstr "Sesongmessige"
+
+#: lib/class-ai1ec-updater.php:12
+msgid "The plugin is at the latest version."
+msgstr "Dette innlegget er i siste versjon."
+
+#: lib/class-ai1ec-updater.php:13
+msgid "Update package not available."
+msgstr "Oppdateringspakke er ikke tilgjengelig."
+
+#: lib/class-ai1ec-updater.php:14
+msgid "Downloading update from <span class=\"code\">%s</span>&#8230;"
+msgstr "Laster ned oppdatering fra <span class=\"code\">%s</span> &#8230;"
+
+#: lib/class-ai1ec-updater.php:15
+msgid "Unpacking the update&#8230;"
+msgstr "Åpner oppdateringen &#8230;"
+
+#: lib/class-ai1ec-updater.php:16
+msgid "Deactivating the plugin&#8230;"
+msgstr "Deaktiverer innlegget &#8230;"
+
+#: lib/class-ai1ec-updater.php:17
+msgid "Removing the old version of the plugin&#8230;"
+msgstr "Fjerner gammel versjon av innstikket &#8230;"
+
+#: lib/class-ai1ec-updater.php:18
+msgid "Could not remove the old plugin."
+msgstr "Kunne ikke fjerne det gamle innstikket."
+
+#: lib/class-ai1ec-updater.php:19
+msgid "Plugin update failed."
+msgstr "Innstikksoppdatering mislyktes."
+
+#: lib/class-ai1ec-updater.php:20
+msgid "Plugin updated successfully."
+msgstr "Innstikk oppdatert."
+
+# @ all-in-one-event-calendar
+#: lib/facebook-php-sdk/fb-wp-helpers.php:32
+#: themes-ai1ec/vortex/agenda.php:99
+msgid "Read more"
+msgstr "Les mer"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:11
+msgid "There are no upcoming events."
+msgstr "Det er ingen kommende Hendelser"
+
+#: themes-ai1ec/vortex/agenda-widget.php:46
+#: themes-ai1ec/vortex/agenda-widget.php:73
+#: themes-ai1ec/vortex/agenda.php:60
+#: themes-ai1ec/vortex/month.php:84
+#: themes-ai1ec/vortex/oneday.php:71
+#: themes-ai1ec/vortex/oneday.php:82
+#: themes-ai1ec/vortex/oneday.php:158
+#: themes-ai1ec/vortex/oneday.php:170
+#: themes-ai1ec/vortex/posterboard.php:49
+#: themes-ai1ec/vortex/week.php:70
+#: themes-ai1ec/vortex/week.php:81
+#: themes-ai1ec/vortex/week.php:160
+#: themes-ai1ec/vortex/week.php:171
+msgid "@ %s"
+msgstr "@ %s"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:51
+msgid "All Day"
+msgstr "Heldags"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:80
+#: themes-ai1ec/vortex/month.php:91
+#: themes-ai1ec/vortex/oneday.php:74
+#: themes-ai1ec/vortex/week.php:73
+msgid "(all-day)"
+msgstr "(heldags)"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:105
+msgid "View Calendar"
+msgstr "Vis kalender"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:114
+#: themes-ai1ec/vortex/calendar.php:113
+msgid "Subscribe to this calendar using your favourite calendar program (iCal, Outlook, etc.)"
+msgstr "Abonner på denne kalenderen med dit foretrukne kalenderprogram (iCal, Outlook, Windows kalender etc.)"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:115
+#: themes-ai1ec/vortex/calendar.php:114
+msgid "✔ Subscribe"
+msgstr "✔ Abonner"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:119
+#: themes-ai1ec/vortex/calendar.php:119
+msgid "Subscribe to this calendar in your Google Calendar"
+msgstr "Abonner på denne kalenderen i din Google Calendar"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda-widget.php:121
+msgid "Add to Google"
+msgstr "Legg til Google"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda.php:6
+#: themes-ai1ec/vortex/month.php:6
+#: themes-ai1ec/vortex/oneday.php:7
+#: themes-ai1ec/vortex/posterboard.php:6
+#: themes-ai1ec/vortex/week.php:6
+msgid "Today"
+msgstr "I dag"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda.php:12
+msgid "Expand All"
+msgstr "Utvid alle"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda.php:15
+msgid "Collapse All"
+msgstr "Klapp sammen alle"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda.php:32
+#: themes-ai1ec/vortex/posterboard.php:22
+msgid "There are no upcoming events to display at this time."
+msgstr "Der er ingen Hendelser å vise på dette tidspunkt."
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/agenda.php:103
+#: themes-ai1ec/vortex/event-multi.php:45
+#: themes-ai1ec/vortex/event-single.php:57
+#: themes-ai1ec/vortex/posterboard.php:69
+msgid "Categories:"
+msgstr "Kategorier:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:37
+msgid "Clear Filters"
+msgstr "Rydd sorteringer"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:38
+msgid "Filter:"
+msgstr "Sortering:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:45
+msgid "Categories"
+msgstr "Kategorier"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:71
+msgid "Tags"
+msgstr "Stikkord"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:115
+msgid "to this filtered calendar"
+msgstr "til denne sorterede kalender"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/calendar.php:121
+msgid "Subscribe in Google Calendar"
+msgstr "Abonner med Google Calendar"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-excerpt.php:2
+#: themes-ai1ec/vortex/event-multi.php:4
+#: themes-ai1ec/vortex/event-single.php:5
+msgid "When:"
+msgstr "Når:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-excerpt.php:4
+#: themes-ai1ec/vortex/event-multi.php:20
+#: themes-ai1ec/vortex/event-single.php:25
+msgid "Where:"
+msgstr "Hvor:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-map.php:2
+msgid "Click to view map"
+msgstr "Klikk for at se kart"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-map.php:9
+msgid "View Full-Size Map"
+msgstr "Vis kart på hel side"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-multi.php:7
+msgid "View in Calendar »"
+msgstr "Vis i kalender »"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-multi.php:14
+#: themes-ai1ec/vortex/event-single.php:15
+msgid "Repeats:"
+msgstr "Gjentakelser:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-multi.php:24
+msgid "View Map »"
+msgstr "Vis kart »"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-multi.php:33
+#: themes-ai1ec/vortex/event-single.php:45
+msgid "Cost:"
+msgstr "Pris:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-multi.php:39
+#: themes-ai1ec/vortex/event-single.php:51
+msgid "Contact:"
+msgstr "Kontakt:"
+
+# @ default
+#: themes-ai1ec/vortex/event-single-footer.php:4
+msgid "This post was replicated from another site's <a class=\"ai1ec-ics-icon\" href=\"%s\" title=\"iCalendar feed\">calendar feed</a>."
+msgstr "Dette innlegget er gjengitt fra en annen sides <a class=\"ai1ec-ics-icon\" href=\"%s\" title=\"iCalendar feed\">kalender feed</a>."
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single-footer.php:8
+msgid "View original post"
+msgstr "Vis opprinnelig innlegg"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single.php:8
+msgid "Back to Calendar"
+msgstr "Tilbake til kalender"
+
+#: themes-ai1ec/vortex/event-single.php:21
+msgid "Excluding:"
+msgstr "Unntatt:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single.php:32
+msgid "Add this event to your favourite calendar program (iCal, Outlook, etc.)"
+msgstr "Legg til denne Hendelsen i ditt foretrukne kalenderprogram (iCal, Outlook, Windows Kalender etc.)"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single.php:33
+msgid "✔ Add to Calendar"
+msgstr "✔ Legg til min kalender"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single.php:36
+msgid "Add this event to your Google Calendar"
+msgstr "Legg til denne hendelsen i din Google Calendar"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/event-single.php:38
+msgid "Add to Google Calendar"
+msgstr "Legg til i Google Calendar"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/oneday.php:35
+#: themes-ai1ec/vortex/week.php:34
+msgid "All-day"
+msgstr "Heldags"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/oneday.php:57
+#: themes-ai1ec/vortex/oneday.php:148
+#: themes-ai1ec/vortex/week.php:56
+#: themes-ai1ec/vortex/week.php:150
+msgid "Summary:"
+msgstr "Kort beskrivelse:"
+
+# @ all-in-one-event-calendar
+#: themes-ai1ec/vortex/oneday.php:60
+#: themes-ai1ec/vortex/oneday.php:151
+#: themes-ai1ec/vortex/week.php:59
+#: themes-ai1ec/vortex/week.php:153
+msgid "click anywhere for details"
+msgstr "klikk et sted for flere detaljer"
+
+# @ all-in-one-event-calendar
+#. Plugin Name of the plugin/theme
+msgid "All-in-One Event Calendar by Timely"
+msgstr "All-in-One Event Calendar fra Timely"
+
+#. Plugin URI of the plugin/theme
+msgid "http://time.ly/"
+msgstr "http://time.ly/"
+
+#. Description of the plugin/theme
+msgid "A calendar system with month, week, day, agenda, posterboard views, upcoming events widget, color-coded categories, recurrence, and import/export of .ics feeds."
+msgstr "Et kalendersystem med måneds-, ukes-, dags-, liste- og oppslagstavlevisning, kommende hendelser widget, fargekodede kategorier, gjenntakelse og import/eksport av .ics feed."
+

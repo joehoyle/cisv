@@ -1,0 +1,116 @@
+/** Tab settings **/
+.srr-tab-wrap{
+	margin: 5px 0px 10px!important;
+	background: none !important;
+	border: none !important;
+	padding: 3px !important;
+}
+.srr-tab-wrap li{
+	list-style: none !important;
+	background-image: none !important;
+	background-color: #e2f2ff;
+	padding: 3px 6px !important;
+	border-bottom: 1px solid #badbf8;
+	cursor: pointer;
+}
+.srr-active-tab {
+	background: #badbf8 !important;
+}
+
+/** General styling **/
+.srr-wrap{
+	padding: 0px !important;
+}
+.srr-wrap div {
+	left: 0px;
+	right: 0px;
+}
+.srr-wrap .srr-item{
+	border-top: 0px;
+}
+.srr-wrap .srr-item:last-child{
+	margin: 0px;
+}
+
+/** Styles **/
+
+/** Grey **/
+.srr-style-grey{
+	border: 1px solid #dfdfdf;
+}
+.srr-style-grey .srr-item{
+	border-bottom: 1px solid #dfdfdf;
+}
+.srr-style-grey .even{
+	background-color: #F8F8F8;
+}
+
+/** Dark **/
+.srr-style-dark{
+	background: #000;
+	border: 1px solid #ccc;
+	color: #DDDDDD!important;
+}
+.srr-style-dark a{
+	color: #FFFFFF !important;
+}
+.srr-style-dark .srr-item{
+	border-color: #333
+}
+.srr-style-dark .even{
+	background: #333333;
+}
+.srr-tab-style-dark li{
+	border-color: #666666;
+	background: #333;
+	color: #FFFFFF !important;
+}
+.srr-tab-style-dark .srr-active-tab{
+	background: #666666!important;
+}
+
+/** Orange **/
+
+.srr-style-orange{
+	border: 2px solid #FF9900;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.srr-style-orange .srr-item{
+	border-bottom: 1px solid #FF9900;
+}
+.srr-tab-style-orange{
+	margin: 0px 0px -1px 5px !important;
+}
+.srr-tab-style-orange li{
+	border-color: #FF9900;
+	background: #FFF8EC;
+	color: #333333 !important;
+}
+.srr-tab-style-orange .srr-active-tab{
+	background: #FF9900!important;
+	color: #FFFFFF !important;
+}
+
+/** Clearfix hack **/
+* html .srr-clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .srr-clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.srr-clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
