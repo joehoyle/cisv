@@ -64,7 +64,7 @@ Template Name: contact
 				echo $error_msg;
 			?>
 
-			<form method="post" action="<?php echo "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>" id="contactform">
+			<form method="post" action="<?php echo esc_url( "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ); ?>" id="contactform">
 				<fieldset>
 					<p><label for="bx_name">Name</label> <input type="text" name="bx_name" id="bx_name" value="<?php echo $bx_name; ?>" tabindex="1" /></p>
 					<p><label for="bx_email">Email</label> <input type="text" name="bx_email" id="bx_email" value="<?php echo $bx_email; ?>" tabindex="2" /></p>

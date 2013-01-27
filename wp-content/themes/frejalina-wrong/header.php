@@ -21,7 +21,7 @@
 <!-- navigation ................................. -->
 <div id="navigation">
 
-	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="get">
+	<form action="<?php echo esc_url( $_SERVER['PHP_SELF'] ); ?>" method="get">
 		<fieldset>
 			<input value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
 			<input type="submit" value="Go!" id="searchbutton" name="searchbutton" />
