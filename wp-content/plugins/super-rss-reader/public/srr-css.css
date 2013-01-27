@@ -3,36 +3,57 @@
 	margin: 5px 0px 10px!important;
 	background: none !important;
 	border: none !important;
-	padding: 3px !important;
+	padding: 0px !important;
 }
 .srr-tab-wrap li{
 	list-style: none !important;
+	float: left;
 	background-image: none !important;
-	background-color: #e2f2ff;
-	padding: 3px 6px !important;
-	border-bottom: 1px solid #badbf8;
+	background-color: #fff;
+	margin: 5px 5px 0px 0px !important;
+	padding: 3px 10px!important;
+	border-radius: 3px;
+	border: 1px solid #ccc;
 	cursor: pointer;
 }
-.srr-active-tab {
-	background: #badbf8 !important;
+.srr-active-tab{
+	background: #333 !important;
+	color: white !important;
 }
 
 /** General styling **/
 .srr-wrap{
 	padding: 0px !important;
 }
-.srr-wrap div {
+.srr-wrap div{
 	left: 0px;
 	right: 0px;
 }
 .srr-wrap .srr-item{
 	border-top: 0px;
+	padding: 10px;
 }
 .srr-wrap .srr-item:last-child{
 	margin: 0px;
 }
+.srr-wrap .srr-item > *{
+	margin-bottom: 10px !important;
+}
+.srr-wrap .srr-title, .srr-wrap .srr-meta{
+	line-height: 150%;
+}
+.srr-wrap .srr-thumb{
+	width: 64px !important;
+	margin: 5px 10px 0 0 !important;
+	float: left !important;
+}
 
 /** Styles **/
+
+/** None **/
+.srr-style-none .srr-item{
+	padding: 0 0 20px 0 !important;
+}
 
 /** Grey **/
 .srr-style-grey{
@@ -80,9 +101,6 @@
 }
 .srr-style-orange .srr-item{
 	border-bottom: 1px solid #FF9900;
-}
-.srr-tab-style-orange{
-	margin: 0px 0px -1px 5px !important;
 }
 .srr-tab-style-orange li{
 	border-color: #FF9900;

@@ -5,7 +5,7 @@ Plugin URI: http://www.aakashweb.com/wordpress-plugins/super-rss-reader/
 Author URI: http://www.aakashweb.com/
 Description: Super RSS Reader is jQuery based RSS reader widget, which displays the RSS feeds in the widget in an attractive way. It uses the jQuery easy ticker plugin to add a news ticker like effect to the RSS feeds. Multiple RSS feeds can be added for a single widget and they get seperated in tabs. <a href="http://www.youtube.com/watch?v=02aOG_-98Tg" target="_blank" title="Super RSS Reader demo video">Check out the demo video</a>.
 Author: Aakash Chakravarthy
-Version: 2.1
+Version: 2.3
 */
 
 if(!defined('WP_CONTENT_URL')) {
@@ -14,15 +14,15 @@ if(!defined('WP_CONTENT_URL')) {
 	$srr_url = WP_CONTENT_URL . '/plugins/' . plugin_basename(dirname(__FILE__)) . '/';
 }
 
-define('SRR_VERSION', '2.1');
+define('SRR_VERSION', '2.3');
 define('SRR_AUTHOR', 'Aakash Chakravarthy');
 define('SRR_URL', $srr_url);
 
 ## Include the required scripts
 function srr_public_scripts(){
 	// jQuery
-	wp_deregister_script('jquery');
-    wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+	//wp_deregister_script('jquery');
+    //wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
     wp_enqueue_script('jquery');
 	
 	// Super RSS Reader JS and CSS
@@ -54,11 +54,14 @@ function srr_rss_parser($instance){
 	$show_date = intval($instance['show_date']);
 	$show_desc = intval($instance['show_desc']);
 	$show_author = intval($instance['show_author']);
+	$show_thumb = stripslashes($instance['show_thumb']);
 	$open_newtab = intval($instance['open_newtab']);
 	$strip_desc = intval($instance['strip_desc']);
+	$read_more = htmlspecialchars($instance['read_more']);
 	$color_style = stripslashes($instance['color_style']);
 	$enable_ticker = intval($instance['enable_ticker']);
 	$visible_items = intval($instance['visible_items']);
+	$ticker_speed = intval($instance['ticker_speed']) * 1000;
 	
 	if(empty($urls)){
 		return '';
@@ -66,28 +69,29 @@ function srr_rss_parser($instance){
 	
 	$rand = array();
 	$url = explode(',', $urls);
+	$ucount = count($url);
 	
 	// Generate the Tabs
-	if(count($url) > 1){
-		echo '<ul class="srr-tab-wrap srr-tab-style-' . $color_style . ' srr-clearfix"><li class="first">Velg nyhetskilde:</li>';
-		for($i=0; $i<count($url); $i++){
+	if($ucount > 1){
+		echo '<ul class="srr-tab-wrap srr-tab-style-' . $color_style . ' srr-clearfix">';
+		for($i=0; $i<$ucount; $i++){
 			// Get the Feed URL
 			$feedUrl = trim($url[$i]);
 			$rss = fetch_feed($feedUrl);
-			if (is_wp_error($rss)){
-			if (is_admin() || current_user_can('manage_options')){
-					echo '<p><strong>RSS Error</strong>:' . $rss->get_error_message() . '</p>';
-					return;
-				}
-			}
-			$rss_title = esc_attr(strip_tags($rss->get_title()));
 			$rand[$i] = rand(0, 999);
-			echo '<li data-tab="srr-tab-' . $rand[$i] . '">' . $rss_title . '</li>';
+			
+			if (!is_wp_error($rss)){
+				$rss_title = esc_attr(strip_tags($rss->get_title()));
+				echo '<li data-tab="srr-tab-' . $rand[$i] . '">' . $rss_title . '</li>';
+			}else{
+				echo '<li data-tab="srr-tab-' . $rand[$i] . '">Error</li>';
+			}
+			
 		}
 		echo '</ul>';
 	}
 	
-	for($i=0; $i<count($url); $i++){
+	for($i=0; $i<$ucount; $i++){
 		// Get the Feed URL
 		$feedUrl = trim($url[$i]);
 		if(isset($url[$i])){
@@ -98,14 +102,19 @@ function srr_rss_parser($instance){
 		
 		// Check for feed errors
 		if (!is_wp_error( $rss ) ){
-			$maxitems = $rss->get_item_quantity($count); 
+			$maxitems = $rss->get_item_quantity($count);
 			$rss_items = $rss->get_items(0, $maxitems); 
 			$rss_title = esc_attr(strip_tags($rss->get_title()));
 			$rss_desc = esc_attr(strip_tags($rss->get_description()));
+		}else{
+			echo '<div class="srr-wrap srr-style-' . $color_style .'" data-id="srr-tab-' . $rand[$i] . '"><p>RSS Error: ' . $rss->get_error_message() . '</p></div>';
+			continue;
 		}
-
+		
+		$randAttr = isset($rand[$i]) ? ' data-id="srr-tab-' . $rand[$i] . '" ' : '';
+		
 		// Outer Wrap start
-		echo '<div class="srr-wrap ' . (($enable_ticker == 1 ) ? 'srr-vticker' : '' ) . ' srr-style-' . $color_style . '" data-visible="' . $visible_items . '" data-id="srr-tab-' . $rand[$i] . '"><div>';
+		echo '<div class="srr-wrap ' . (($enable_ticker == 1 ) ? 'srr-vticker' : '' ) . ' srr-style-' . $color_style . '" data-visible="' . $visible_items . '" data-speed="' . $ticker_speed . '"' . $randAttr . '><div>';
 		
 		// Check feed items
 		if ($maxitems == 0){
@@ -122,22 +131,33 @@ function srr_rss_parser($instance){
 				// Get the item title
 				$title = esc_attr(strip_tags($item->get_title()));
 				if ( empty($title) )
-					$title = __('Untitled');
+					$title = __('No Title');
 				
 				// Get the date
 				$date = $item->get_date('j F Y');
 				
+				// Get thumbnail if present @since v2.2
+				$thumb = '';
+				if ($show_thumb == 1 && $enclosure = $item->get_enclosure()){
+					$thumburl = $enclosure->get_thumbnail();
+					if(!empty($thumburl))
+					$thumb = '<img src="' . $thumburl . '" alt="' . $title . '" class="srr-thumb" align="left"/>';
+				}
+				
 				// Get the description
 				$desc = str_replace( array("\n", "\r"), ' ', esc_attr( strip_tags( @html_entity_decode( $item->get_description(), ENT_QUOTES, get_option('blog_charset') ) ) ) );
-				
 				if($strip_desc != 0){
 					$desc = wp_html_excerpt( $desc, $strip_desc );
+					$rmore = (!empty($read_more)) ?  '<a href="' . $link . '" title="Read more">' . $read_more . '</a>' : '';
+					
 					if ( '[...]' == substr( $desc, -5 ) )
-						$desc = substr( $desc, 0, -5 ) . '[&hellip;]';
+						$desc = substr( $desc, 0, -5 );
 					elseif ( '[&hellip;]' != substr( $desc, -10 ) )
-						$desc .= ' [&hellip;]';
+						$desc .= '';
+						
+					$desc = esc_html( $desc );
 				}
-				$desc = esc_html( $desc );
+				$desc = $thumb . $desc . ' ' . $rmore;
 				
 				// Get the author
 				$author = $item->get_author();
@@ -145,19 +165,28 @@ function srr_rss_parser($instance){
 					$author = $author->get_name();
 					$author = esc_html(strip_tags($author));
 				}
-				
+		
 				// Open links in new tab
 				$newtab = ($open_newtab) ? ' target="_blank"' : '';
 				
 				echo "\n\n\t";
 				
 				// Display the feed items
-				echo '<div class="srr-item post-forside ' . (($j%2 == 0) ? 'even' : 'odd') . '">';
-				echo '<h2><a href="' . $link . '"' . $newtab . ' title="Posted on ' . $date . '">' .$title . '</a></h2>';
-				if($show_date)		echo '<br/><em class="srr-date">' . $date . '</em>';
-				if($show_author) 	echo ' - <cite class="srr-author">' . $author . '</cite>';
-				if($show_desc) 		echo '<p class="srr-summary">' . $desc . '</p>';
-				echo '<p class="forside-les-mer"><a href="' . $link . '"' . $newtab . ' title="Posted on ' . $date . '">Les mer <span class="meta-nav">&raquo;</span></a></p>';
+				echo '<div class="srr-item ' . (($j%2 == 0) ? 'even' : 'odd') . '">';
+				echo '<div class="srr-title"><a href="' . $link . '"' . $newtab . ' title="Posted on ' . $date . '">' .$title . '</a></div>';
+				echo '<div class="srr-meta">';
+				
+				if($show_date && !empty($date))
+					echo '<time class="srr-date">' . $date . '</time>';
+					
+				if($show_author && !empty($author))
+					echo ' - <cite class="srr-author">' . $author . '</cite>';
+				
+				echo '</div>';
+				
+				if($show_desc)
+					echo '<p class="srr-summary srr-clearfix">' . $desc . '</p>';
+					
 				echo '</div>';
 				// End display
 				
@@ -195,10 +224,10 @@ class super_rss_reader_widget extends WP_Widget{
 		
 		echo $before_widget . $title;
 		echo "\n" . '
-		<!-- Start - Super RSS Reader -->
+		<!-- Start - Super RSS Reader v' . SRR_VERSION . '-->
 		<div class="super-rss-reader-widget">' . "\n";
 		
-		srr_rss_parser($instance, $instance['urls']);
+		srr_rss_parser($instance);
 		
 		echo "\n" . '</div>
 		<!-- End - Super RSS Reader -->
@@ -216,12 +245,15 @@ class super_rss_reader_widget extends WP_Widget{
 		$instance['show_date'] = intval($new_instance['show_date']);
 		$instance['show_desc'] = intval($new_instance['show_desc']);
 		$instance['show_author'] = intval($new_instance['show_author']);
+		$instance['show_thumb'] = stripslashes($new_instance['show_thumb']);
 		$instance['open_newtab'] = intval($new_instance['open_newtab']);
 		$instance['strip_desc'] = intval($new_instance['strip_desc']);
+		$instance['read_more'] = stripslashes($new_instance['read_more']);
 		
 		$instance['color_style'] = stripslashes($new_instance['color_style']);
 		$instance['enable_ticker'] = intval($new_instance['enable_ticker']);
 		$instance['visible_items'] = intval($new_instance['visible_items']);
+		$instance['ticker_speed'] = intval($new_instance['ticker_speed']);
 		
 		return $instance;
 	}
@@ -232,9 +264,9 @@ class super_rss_reader_widget extends WP_Widget{
 		
 		$instance = wp_parse_args( (array) $instance, array(
 			'title' => '', 'urls' => '', 'count' => 5,
-			'show_date' => 0, 'show_desc' => 1, 'show_author' => 0, 
-			'open_newtab' => 1, 'strip_desc' => 100, 'color_style' => 'none', 
-			'enable_ticker' => 1, 'visible_items' => 5
+			'show_date' => 0, 'show_desc' => 1, 'show_author' => 0, 'show_thumb' => 1, 
+			'open_newtab' => 1, 'strip_desc' => 100, 'read_more' => '[...]',
+			'color_style' => 'none', 'enable_ticker' => 1, 'visible_items' => 5, 'ticker_speed' => 2,
 		));
 		
 		$title = htmlspecialchars($instance['title']);
@@ -244,12 +276,15 @@ class super_rss_reader_widget extends WP_Widget{
 		$show_date = intval($instance['show_date']);
 		$show_desc = intval($instance['show_desc']);
 		$show_author = intval($instance['show_author']);
+		$show_thumb = intval($instance['show_thumb']);
 		$open_newtab = intval($instance['open_newtab']);
 		$strip_desc = intval($instance['strip_desc']);
+		$read_more = htmlspecialchars($instance['read_more']);
 		
 		$color_style = stripslashes($instance['color_style']);
 		$enable_ticker = intval($instance['enable_ticker']);
 		$visible_items = intval($instance['visible_items']);
+		$ticker_speed = intval($instance['ticker_speed']);
 		
 		?>
 		<div class="srr_settings">
@@ -284,15 +319,15 @@ class super_rss_reader_widget extends WP_Widget{
 		  </tr>
 		  <tr>
 			<td height="29"><input id="<?php echo $this->get_field_id('show_author'); ?>" type="checkbox"  name="<?php echo $this->get_field_name('show_author'); ?>" value="1" <?php echo $show_author == "1" ? 'checked="checked"' : ""; ?> /></td>
-			<td><label for="<?php echo $this->get_field_id('show_author'); ?>">Show Author</label></td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
+			<td>Show Author</label></td>
+			<td><label for="<?php echo $this->get_field_id('read_more'); ?>">Read more text</label></td>
+			<td><input id="<?php echo $this->get_field_name('read_more'); ?>" name="<?php echo $this->get_field_name('read_more'); ?>" type="text" value="<?php echo $read_more; ?>" class="widefat" title="Leave blank to hide read more text"/></td>
 		  </tr>
 		  <tr>
 		    <td height="29"><input id="<?php echo $this->get_field_id('open_newtab'); ?>" type="checkbox"  name="<?php echo $this->get_field_name('open_newtab'); ?>" value="1" <?php echo $open_newtab == "1" ? 'checked="checked"' : ""; ?> /></td>
 		    <td><label for="<?php echo $this->get_field_id('open_newtab'); ?>">Open links in new tab</label></td>
-		    <td>&nbsp;</td>
-		    <td>&nbsp;</td>
+		    <td><label for="<?php echo $this->get_field_id('show_thumb'); ?>">Show thumbnail if present</label></td>
+		    <td><input id="<?php echo $this->get_field_id('show_thumb'); ?>" type="checkbox"  name="<?php echo $this->get_field_name('show_thumb'); ?>" value="1" <?php echo $show_thumb == "1" ? 'checked="checked"' : ""; ?> /></td>
 	      </tr>
 		</table>
 		</div>
@@ -321,10 +356,16 @@ class super_rss_reader_widget extends WP_Widget{
 			<td><input id="<?php echo $this->get_field_id('visible_items');?>" name="<?php echo $this->get_field_name('visible_items'); ?>" type="text" value="<?php echo $visible_items; ?>" class="widefat" title="The no of feed items to be visible."/>
 			</td>
 		  </tr>
+		  <tr>
+			<td height="36"><label for="<?php echo $this->get_field_id('ticker_speed');?>">Ticker speed: </label></td>
+			<td><input id="<?php echo $this->get_field_id('ticker_speed');?>" name="<?php echo $this->get_field_name('ticker_speed'); ?>" type="text" value="<?php echo $ticker_speed; ?>" title="Speed of the ticker in seconds"/> seconds
+			</td>
+		  </tr>
 		</table>
 		</div>
 		
 		<div class="srr_support"> <a href="http://facebook.com/aakashweb" class="srr_fblike" target="_blank">Like</a> | <a href="http://bit.ly/srrdonate" target="_blank" style="color: #FF6600" title="If you like this plugin, then just make a small donation and it will be helpful for the plugin's development.">Donate</a> | <a href="http://www.aakashweb.com/wordpress-plugins/super-rss-reader/" target="_blank">Support</a></div>
+		<small>Please donate and share this plugin to show your support. Thank you :)</small>
 		
 		<?php
 	}

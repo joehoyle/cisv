@@ -1,15 +1,15 @@
 === Super RSS Reader ===
 Contributors: Aakash Chakravarthy
-Donate link: http://bit.ly/srrdonate
-Tags: rss, feeds, widget, links, twitter, admin, plugin, feed, posts, page
-Author URI: http://www.aakashweb.com
+Author URI: http://www.aakashweb.com/
 Plugin URI: http://www.aakashweb.com/wordpress-plugins/super-rss-reader/
+Tags: rss, feeds, widget, links, twitter, admin, plugin, feed, posts, page, ticker, thumbnail, atom, jquery
 License: GPLv2 or later
+Donate Link: http://bit.ly/srrdonate
 Requires at least: 2.8
-Tested up to: 3.4.1
-Stable tag: 2.1
+Tested up to: 3.5
+Stable tag: 2.3
 
-Super RSS Reader is an awesome RSS widget plugin, which has features like news ticker effect, tabbed RSS feeds, customizable color modes and more. 
+An awesome RSS widget plugin, which displays feeds like news ticker effect with thumbnails, multiple tabbed feeds, customizable color styles and more
 
 == Description ==
 
@@ -17,18 +17,20 @@ Super RSS Reader is jQuery based RSS reader widget, which displays the RSS feeds
 
 The plugin is fully customizable with external styles and with some inbuilt color styles. It acts as a perfect replacement for the default RSS widget in WordPress.
 
-[youtube=http://www.youtube.com/watch?v=02aOG_-98Tg]
+[Check out the **LIVE DEMO** of the plugin](http://www.aakashweb.com/demos/super-rss-reader/)
 
 = Features =
 
 * jQuery [news ticker like effect](http://www.aakashweb.com/jquery-plugins/easy-ticker/) to the RSS feeds (can turn off or on)
 * Tabs support, if multiple RSS feeds are added in a single widget.
+* **(NEW)** Displays thumbnail to the feed items if available.
 * Customizable with Inbuilt color styles and with external CSS styles.
+* **(NEW)** Customizable ticker speed.
 * Add multiple RSS feeds in a page with a ticker effect.
 * Supports RSS or atom feed.
 * Can tweak the widget to change the no of visible feed itemas and more...
 
-Check out the [live working demo](http://www.aakashweb.com/resources/pages/demos/super-rss-reader/) in this page.
+[youtube=http://www.youtube.com/watch?v=02aOG_-98Tg]
 
 * If you like this plugin, then [just make a small donation](http://bit.ly/srrdonate) and it will be helpful for the plugin development.
 * The jQuery ticker effect is by the [jQuery easy ticker plugin](http://www.aakashweb.com/jquery-plugins/easy-ticker/)
@@ -74,14 +76,25 @@ For more FAQs just check out the [official page](http://www.aakashweb.com/wordpr
 == Screenshots ==
 
 1. Example Super RSS Reader widgets shown in the sidebar, having a ticker effect and a tabbed mode.
+1. Plugin working in different themes and RSS feeds.
 1. Picture showing some possible ways of Customizing the widget.
 1. The Super RSS Reader widget in the administration page.
 
-[Live Working demo](http://www.aakashweb.com/resources/pages/demos/super-rss-reader/)
+[Live Working demo](http://www.aakashweb.com/demos/super-rss-reader/)
 
 [More screenshots in Aakash Web](http://www.aakashweb.com/wordpress-plugins/super-rss-reader/)
 
 == Changelog ==
+= 2.3 =
+* Fixed imcompatibility of other jQuery plugins due to the usage of the latest version of jQuery.
+
+= 2.2 =
+* Displays "thumbnail" of the feed item if available.
+* Added setting to change ticker speed.
+* Added setting to edit the "Read more" text.
+* Default styles are revised.
+* Switched to full size ticker code.
+* Core code revised.
 
 = 2.1 =
 * Added option to open links in new window.

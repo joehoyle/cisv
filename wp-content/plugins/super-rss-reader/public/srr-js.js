@@ -1,7 +1,215 @@
 /*
- * Super RSS Reader - jQuery based feed displayer - v1.0
+ * Super RSS Reader - jQuery feed reader - v1.1
  * Included with "Super RSS Reader" Wordpress plugin @since v2.0
  * Author: Aakash Chakravarthy, www.aakashweb.com
- * Uses the jQuery Easy ticker plugin v1.0
  */
-jQuery(document).ready(function(){var a=jQuery(".super-rss-reader-widget");a.find(".srr-wrap").hide();a.find(".srr-wrap:first").show();a.find(".srr-tab-wrap li:first").addClass("srr-active-tab");jQuery(".srr-tab-wrap li").click(function(){var a=jQuery(this).attr("data-tab");var b=jQuery(this).parent().parent();jQuery(this).parent().children("li").removeClass("srr-active-tab");jQuery(this).addClass("srr-active-tab");b.find(".srr-wrap").hide();b.find(".srr-wrap[data-id="+a+"]").show()});jQuery(".srr-vticker").each(function(){var a=jQuery(this).attr("data-visible");var b=jQuery(this);b.easyTicker({visible:a})})});(function(a){a.fn.easyTicker=function(b){function r(){g.attr("data-focus",1)}function q(){g.attr("data-focus",0)}var c={direction:"up",easing:"swing",speed:"slow",interval:2e3,height:"auto",visible:0,mousePause:1,controls:{up:"",down:"",toggle:""}};var b=a.extend(c,b),d=0,e="et-run",f=0,g=a("body"),h=a(b.controls.up),i=a(b.controls.down),j=a(b.controls.toggle);var k=function(a,c){c.children().css("margin",0).children().css("margin",0);a.css({position:"relative",height:b.height=="auto"?p(a,c):b.height,overflow:"hidden"});c.css({position:"absolute",margin:0}).children().css("margin",0);if(b.visible!=0&&b.height=="auto"){o(a,c)}j.addClass(e);m(a,c)};var l=function(c,d,e){if(!c.is(":visible"))return;if(e=="up"){var f=":first-child",g="-=",h="appendTo"}else{var f=":last-child",g="+=",h="prependTo"}var i=a(d).children(f);var j=i.outerHeight();a(d).stop(true,true).animate({top:g+j+"px"},b.speed,b.easing,function(){i.hide()[h](d).fadeIn();a(d).css("top",0);if(b.visible!=0&&b.height=="auto"){o(c,d)}})};var m=function(a,c){if(j.length==0||j.hasClass(e)){d=setInterval(function(){if(g.attr("data-focus")!=1){return}l(a,c,b.direction)},b.interval)}};var n=function(a){clearInterval(d)};var o=function(c,d){var e=0;a(d).children(":lt("+b.visible+")").each(function(){e+=a(this).outerHeight()});c.stop(true,true).animate({height:e},b.speed)};var p=function(b,c){var d=0;var e=b.css("display");b.css("display","block");a(c).children().each(function(){d+=a(this).outerHeight()});b.css("display",e);return d};if(false){document.onfocusin=r;document.onfocusout=q}else{a(window).bind("focus mouseover",r);a(window).bind("blur",q)}return this.each(function(){var c=a(this);var d=c.children(":first-child");k(c,d);if(b.mousePause==1){c.mouseover(function(){n(c)}).mouseleave(function(){m(c,d)})}j.live("click",function(){if(a(this).hasClass(e)){n(c);a(this).removeClass(e)}else{a(this).addClass(e);m(c,d)}});h.live("click",function(){l(c,d,"up")});i.live("click",function(){l(c,d,"down")})})}})(jQuery)
+
+jQuery(document).ready(function(){
+	
+	var widget = jQuery('.super-rss-reader-widget');
+	widget.find('.srr-wrap').hide();
+	widget.find('.srr-wrap:first').show();
+	widget.find('.srr-tab-wrap li:first').addClass('srr-active-tab');
+	
+	jQuery('.srr-tab-wrap li').click(function(){
+		var id = jQuery(this).attr('data-tab');
+		var parent = jQuery(this).parent().parent();
+		
+		jQuery(this).parent().children('li').removeClass('srr-active-tab');
+		jQuery(this).addClass('srr-active-tab');
+		
+		parent.find('.srr-wrap').hide();
+		parent.find('.srr-wrap[data-id=' + id + ']').show();
+	});
+	
+	// Add the ticker to the required elements
+	jQuery('.srr-vticker').each(function(){
+		var visible = jQuery(this).attr('data-visible');
+		var interval = jQuery(this).attr('data-speed');
+		var obj = jQuery(this);
+		obj.easyTicker({
+			'visible': visible,
+			'interval': interval
+		});
+	});
+});
+
+/* 
+ * jQuery - Easy Ticker plugin - v1.0
+ * http://www.aakashweb.com/
+ * Copyright 2012, Aakash Chakravarthy
+ * Released under the MIT License.
+ */
+
+(function($){
+	$.fn.easyTicker = function(options) {
+	
+	var defaults = {
+		direction: 'up',
+   		easing: 'swing',
+		speed: 'slow',
+		interval: 2000,
+		height: 'auto',
+		visible: 0,
+		mousePause: 1,
+		controls:{
+			up: '',
+			down: '',
+			toggle: ''
+		}
+	};
+	
+	// Initialize the variables
+	var options = $.extend(defaults, options), 
+		timer = 0,
+		tClass = 'et-run',
+		winFocus = 0,
+		vBody = $('body'),
+		cUp = $(options.controls.up),
+		cDown = $(options.controls.down),
+		cToggle = $(options.controls.toggle);
+	
+	// The initializing function
+	var init = function(obj, target){
+		
+		target.children().css('margin', 0).children().css('margin', 0);
+		
+		obj.css({
+			position : 'relative',
+			height : (options.height == 'auto') ? objHeight(obj, target) : options.height,
+			overflow : 'hidden'
+		});
+		
+		target.css({
+			'position' : 'absolute',
+			'margin' : 0
+		}).children().css('margin', 0);
+		
+		if(options.visible != 0 && options.height == 'auto'){
+			adjHeight(obj, target);
+		}
+
+		// Set the class to the "toggle" control and set the timer.
+		cToggle.addClass(tClass);
+		setTimer(obj, target);
+	}
+	
+	// Core function to move the element up and down.
+	var move = function(obj, target, type){
+		
+		if(!obj.is(':visible')) return;
+		
+		if(type == 'up'){
+			var sel = ':first-child',
+				eq = '-=',
+				appType = 'appendTo';
+		}else{
+			var sel = ':last-child',
+				eq = '+=',
+				appType = 'prependTo';
+		}
+	
+		var selChild = $(target).children(sel);
+		var height = selChild.outerHeight();
+	
+		$(target).stop(true, true).animate({
+			'top': eq + height + "px"
+		}, options.speed, options.easing, function(){
+			selChild.hide()[appType](target).fadeIn();
+			$(target).css('top', 0);
+			if(options.visible != 0 && options.height == 'auto'){
+				adjHeight(obj, target);
+			}
+		});
+	}
+	
+	// Activates the timer.
+	var setTimer = function(obj, target){
+		if(cToggle.length == 0 || cToggle.hasClass(tClass)){
+			timer = setInterval(function(){
+				if (vBody.attr('data-focus') != 1){ return; }
+				move(obj, target, options.direction);
+			}, options.interval);
+		}
+	}
+	
+	// Stops the timer
+	var stopTimer = function(obj){
+		clearInterval(timer);
+	}
+	
+	// Adjust the wrapper height and show the visible elements only.
+	var adjHeight = function(obj, target){
+		var wrapHeight = 0;
+		$(target).children(':lt(' + options.visible + ')').each(function(){
+			wrapHeight += $(this).outerHeight();
+		});
+		
+		obj.stop(true, true).animate({height: wrapHeight}, options.speed);
+	}
+	
+	// Get the maximum height of the children.
+	var objHeight = function(obj, target){
+		var height = 0;
+		
+		var tempDisp = obj.css('display');
+		obj.css('display', 'block');
+				
+		$(target).children().each(function(){
+			height += $(this).outerHeight();
+		});
+		
+		obj.css('display', tempDisp);
+		return height;
+	}
+	
+	// Hack to check window status
+	function onBlur(){ vBody.attr('data-focus', 0); };
+	function onFocus(){ vBody.attr('data-focus', 1); };
+	
+	if (/*@cc_on!@*/false) { // check for Internet Explorer
+		document.onfocusin = onFocus;
+		document.onfocusout = onBlur;
+	}else{
+		$(window).bind('focus mouseover', onFocus);
+		$(window).bind('blur', onBlur);
+	}
+
+	return this.each(function(){
+		var obj = $(this);
+		var tar = obj.children(':first-child');
+		
+		// Initialize the content
+		init(obj, tar);
+		
+		// Bind the mousePause action
+		if(options.mousePause == 1){
+			obj.mouseover(function(){
+				stopTimer(obj);
+			}).mouseleave(function(){
+				setTimer(obj, tar);
+			});
+		}
+		
+		// Controls action
+		cToggle.live('click', function(){
+			if($(this).hasClass(tClass)){
+				stopTimer(obj);
+				$(this).removeClass(tClass);
+			}else{
+				$(this).addClass(tClass);
+				setTimer(obj, tar);
+			}
+		});
+		
+		cUp.live('click', function(){
+			move(obj, tar, 'up');
+		});
+		
+		cDown.live('click', function(){
+			move(obj, tar, 'down');
+		});
+		
+	});
+};
+})(jQuery);
