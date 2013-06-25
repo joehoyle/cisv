@@ -623,7 +623,25 @@ function smooth_get_inline_css($echo='0'){
 	if((is_singular() and ($smooth_slider_style == 'default' or empty($smooth_slider_style) or !$smooth_slider_style)) or (!is_singular() and $smooth_slider['stylesheet'] == 'default')  )	{ $default=true; }
 	else{ $default=false;}
 	
-	$smooth_slider_css=array();
+	$smooth_slider_css=array(
+	'smooth_slider' => '',
+	'title_fstyle' => '',
+	'sldr_title' => '',
+	'bg' => '',
+	'smooth_slideri' => '',
+	'ptitle_fstyle' => '',
+	'smooth_slider_h2' => '',
+	'smooth_slider_h2_a' => '',
+	'content_fstyle' => '',
+	'smooth_slider_span' => '',
+	'img_align' => '',	
+	'img_size' => '',
+	'smooth_slider_thumbnail' => '',
+	'smooth_slider_p_more' => '',	
+	'sldrlink' => '',	
+	'sldrlink_a' => '',			
+	);
+	
 	if($default){
 		$style_start= ($echo=='0') ? 'style="':'';
 		$style_end= ($echo=='0') ? '"':'';
